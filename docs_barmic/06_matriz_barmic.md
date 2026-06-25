@@ -63,3 +63,15 @@ Cruzando el Nivel de Riesgo obtenido en la matriz con las puntuaciones del está
 3. **Prioridad 3: Cross-Site Scripting (XSS Reflejado)**
    * **Riesgo:** 12 (Alto) | **CVSS:** 6.1 (Media)
    * **Justificación:** Aunque requiere interacción de la víctima, su severidad es suficiente para dañar clientes específicos. Se abordará una vez que los riesgos a nivel de servidor (SQLi y Comandos) hayan sido neutralizados, aplicando *Output Encoding* y políticas CSP.
+
+   ### 5. Políticas de Prevención según Riesgo Priorizado
+Para abordar de manera definitiva los hallazgos y evitar su reaparición, la gerencia de TI de MercadoSur debe incorporar las siguientes políticas de prevención en el ciclo de vida de desarrollo seguro (SSDLC)[cite: 2], atacando directamente la causa raíz:
+
+#### A. Política de Prevención para Riesgo Prioridad 1 (SQLi)
+* **Obligatoriedad de Consultas Parametrizadas (Prepared Statements):** Queda estrictamente prohibida la concatenación dinámica de cadenas para formar sentencias SQL en cualquier componente del backend. Todo acceso a datos debe realizarse separando la instrucción del parámetro mediante el uso de marcadores[cite: 3], garantizando que el motor de la base de datos interprete la entrada únicamente como un valor literal.
+
+#### B. Política de Prevención para Riesgo Prioridad 2 (Inyección de Comandos)
+* **Erradicación de Invocaciones Directas al Shell:** Los desarrolladores tienen prohibido utilizar funciones que transfieran la entrada del usuario al sistema operativo host[cite: 3] (ej. `shell_exec`, `system`). Cualquier necesidad funcional (como resoluciones de red o procesamiento de archivos) debe resolverse utilizando las APIs o librerías nativas seguras del lenguaje de programación. En casos excepcionales debidamente justificados, se aplicará una validación estricta por **Listas Blancas**, aceptando solo caracteres predefinidos y rechazando cualquier símbolo de encadenamiento[cite: 3].
+
+#### C. Política de Prevención para Riesgo Prioridad 3 (XSS Reflejado)
+* **Estándar de Codificación de Salida (Output Encoding):** Se instituye como norma que ningún dato ingresado por el usuario, ya sea proveniente de una petición HTTP o extraído de la base de datos, será reflejado en el navegador sin antes aplicar una conversión de caracteres especiales a sus correspondientes entidades HTML (ej. `<` a `&lt;`)[cite: 3]. Esto neutraliza la interpretación de etiquetas scripts maliciosas por parte del navegador web.
