@@ -18,3 +18,6 @@
 9. veo que falta la siguiente información importante en el Markdown de matriz, asi que formula políticas de prevención específicas para cada uno de los riesgos priorizados en la matriz (Inyección SQL, Inyección de Comandos y XSS Reflejado). Estas políticas deben estar conectadas con la causa raíz de los hallazgos descubiertos en la auditoría y adaptadas al desarrollo de MercadoSur.
 
 10. Ahora en relación a los controles (Propone controles de mitigación concretos y viables por vulnerabilidad, distintos de la prevención, y referencia un marco (OWASP, CIS o NIST). ), para cumplir con el nivel destacado de la rúbrica, propón controles de mitigación concretos y viables para las tres vulnerabilidades evaluadas. 
+
+11.
+05_activos_barmic.md identifica y clasifica por lo menos 6 activos de información que sean clave para el funcionamiento de un e-commerce como MercadoSur. Explica bien cómo las vulnerabilidades que encontramos en el lab (SQLi, XSS e Inyección de Comandos) ponen en riesgo a cada uno de esos activos. Además arma varias políticas de prevención por cada riesgo, atacando directamente la causa raíz del problema. Para cerrar, explayate en la parte de mejoras tecnológicas de infraestructura y arma un Plan de Recuperación ante Desastres (DRP) bien completo, detallando cómo serían los respaldos, la restauración y los avisos en caso de un incidente grave.
