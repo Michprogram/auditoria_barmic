@@ -16,4 +16,19 @@ Se lograron demostrar y explotar con éxito tres vectores de ataque críticos. A
 | **Inyección de Comandos OS** | AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H | **9.8** | 🔴 **Crítica** |
 | **Cross-Site Scripting (XSS Reflejado)** | AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N | **6.1** | 🟠 **Media** |
 
-*Nota: Los análisis técnicos detallados, las capturas de evidencia, las políticas de prevención de causa raíz y los controles de mitigación para cada hallazgo se encuentran desglosados en sus respectivos documentos adjuntos.*
+### 4. Evaluación de Riesgos y Priorización Operativa
+Aplicando una metodología de evaluación de Riesgo Inherente (Probabilidad × Impacto) adaptada a la industria comercial, se definió el siguiente orden de remediación:
+* **Prioridad 1:** Inyección SQL (Riesgo Extremo - Nivel 25).
+* **Prioridad 2:** Inyección de Comandos (Riesgo Extremo - Nivel 20).
+* **Prioridad 3:** XSS Reflejado (Riesgo Alto - Nivel 12).
+
+### 5. Estrategia de Defensa en Profundidad
+Para neutralizar estos riesgos, se diseñó un modelo de seguridad de múltiples capas:
+* **Políticas de Prevención (Código Seguro):** Implementación obligatoria de Consultas Parametrizadas (Prepared Statements), codificación de salida estricta (Output Encoding) y validación por listas blancas, erradicando la invocación directa a la terminal del sistema.
+* **Controles de Mitigación (Infraestructura):** Despliegue de un Web Application Firewall (WAF) perimetral, aislamiento de procesos mediante contenedores (Sandboxing), aplicación del Principio del Menor Privilegio (PoLP) en motores de bases de datos y emisión de políticas CSP.
+
+### 6. Continuidad de Negocio y Recuperación (DRP)
+Se estableció un Plan de Recuperación ante Desastres estructurado para garantizar la resiliencia operativa:
+* **Métricas Críticas:** RPO (Pérdida de datos tolerable) de 15 minutos y RTO (Tiempo de inactividad) máximo de 2 horas.
+* **Respaldo Criptográfico:** Adopción de la regla 3-2-1 con copias inmutables (WORM) *off-site* para prevenir el secuestro o destrucción de la base de datos.
+* **Gestión de Crisis:** Establecimiento de un Comité de Emergencia (RACI), protocolos de escalamiento legal y comunicación a clientes, complementado con un programa continuo de simulacros técnicos y análisis post-incidente.
