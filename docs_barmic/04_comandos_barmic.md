@@ -20,15 +20,18 @@ Al ingresar `127.0.0.1; cat /etc/passwd`, la aplicación de MercadoSur le entreg
 Equivale al control total del servidor. Es una de las vulnerabilidades más críticas. Un atacante podría leer el código fuente de MercadoSur, extraer credenciales en texto plano de bases de datos o pasarelas de pago, instalar software de minería o backdoors, e incluso pivotar hacia otros servidores privados de la red interna de la empresa.
 
 ### 3. Puntuación y Severidad CVSS v3.1
-**Puntuación CVSS Resultante:** **9.8 (CRÍTICA)**
+El impacto de esta falla se cuantifica utilizando el estándar de la industria.
+
+![Calculadora CVSS Command Injection](img_barmic/p-command-injection_barmic.png)
+*Figura 2: Puntuación CVSS v3.1 para la Inyección de Comandos, resultando en un Base Score de 9.8 (Crítica).*
 
 **Análisis y Justificación de Severidad a Nivel Profesional (Vector: AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H):**
 * **Attack Vector (AV) - Network:** Explotable remotamente desde internet mediante cualquier formulario vulnerable expuesto por el e-commerce.
-* **Attack Complexity (AC) - Low:** El uso del separador `;` para encadenar comandos es un comportamiento estándar y trivial del shell; no se requiere evadir mitigaciones complejas.
-* **Privileges Required (PR) - None:** No se requiere una cuenta de administrador ni cliente para lanzar la petición si el endpoint es público.
-* **User Interaction (UI) - None:** Completamente automatizable por el atacante sin requerir interacción de una víctima (a diferencia del XSS).
-* **Scope (S) - Unchanged:** El ataque se concentra en tomar control del entorno de ejecución actual (el servidor web vulnerable).
-* **Confidentiality, Integrity, Availability - High (Alta):** Impacto máximo en la tríada CIA. El atacante obtiene Ejecución de Código Remota (RCE). Puede leer cualquier archivo (Confidencialidad), alterar el código del sitio web o instalar malware (Integridad) y formatear el disco o tumbar los servicios de la tienda online (Disponibilidad).
+* **Attack Complexity (AC) - Low:** El uso del separador `;` para encadenar comandos es un comportamiento estándar del shell.
+* **Privileges Required (PR) - None:** No se requiere una cuenta para lanzar la petición si el endpoint es público.
+* **User Interaction (UI) - None:** Completamente automatizable por el atacante sin requerir interacción de una víctima.
+* **Scope (S) - Unchanged:** El ataque se concentra en tomar control del entorno de ejecución actual (el servidor host Linux).
+* **Confidentiality, Integrity, Availability - High (Alta):** Impacto máximo en la tríada CIA. El atacante obtiene Ejecución Remota de Código (RCE). Puede leer cualquier archivo protegido del sistema operativo (Confidencialidad), alterar el código del sitio web (Integridad) y formatear el disco o tumbar los servicios de la tienda online (Disponibilidad).
 
 ### 4. Políticas de Prevención (Estrategias de Código Seguro)
 La directriz primordial de desarrollo para MercadoSur debe ser **no transferir la entrada del usuario directamente al sistema operativo**. 
