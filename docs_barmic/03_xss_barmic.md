@@ -22,15 +22,18 @@ Cuando un usuario ingresa el nombre, el servidor lo procesa e inserta en la etiq
 Si un atacante envía un enlace manipulado (con el payload en la URL) a los clientes de MercadoSur, podría ejecutar código silencioso en sus navegadores. Esto permite el robo de la sesión de otro usuario (Session Hijacking), lo que facultaría al atacante para suplantar la identidad del cliente, acceder a sus tarjetas guardadas, ver su historial de pedidos o presentarle un formulario fraudulento para clonar sus credenciales bancarias.
 
 ### 3. Puntuación y Severidad CVSS v3.1
-**Puntuación CVSS Resultante:** **6.1 (MEDIO)**
+Para evaluar el riesgo estándar de esta vulnerabilidad reflejada, utilizamos la calculadora oficial.
+
+![Calculadora CVSS XSS](img_barmic/p-XSS_barmic.png)
+*Figura 3: Puntuación CVSS v3.1 para la vulnerabilidad XSS Reflejado, resultando en un Base Score de 6.1 (Medio).*
 
 **Análisis y Justificación de Severidad a Nivel Profesional (Vector: AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N):**
-* **Attack Vector (AV) - Network:** Se explota por internet enviando un enlace. El atacante no necesita acceso a la red interna de MercadoSur.
-* **Attack Complexity (AC) - Low:** El payload es básico y directo; no hay mecanismos complejos de evasión que sortear en el nivel analizado.
-* **Privileges Required (PR) - None:** El atacante no necesita estar registrado ni poseer credenciales en MercadoSur para armar y enviar el enlace.
-* **User Interaction (UI) - Required:** A diferencia de ataques directos al servidor, aquí el atacante *necesita obligatoriamente* que un cliente legítimo haga clic en el enlace infectado para que el script se ejecute en su navegador local.
-* **Scope (S) - Changed:** El ataque cruza el límite de seguridad. La falla original está en el código del servidor de MercadoSur, pero el impacto ocurre en un entorno completamente distinto: el navegador del cliente final.
-* **Confidentiality & Integrity - Low:** Permite leer datos locales del navegador de la víctima (Confidencialidad Baja) y alterar temporalmente la apariencia o DOM del sitio (Integridad Baja). 
+* **Attack Vector (AV) - Network:** Se explota por internet enviando un enlace manipulado.
+* **Attack Complexity (AC) - Low:** El payload es básico y directo; no hay mecanismos de evasión que sortear.
+* **Privileges Required (PR) - None:** El atacante no necesita credenciales en MercadoSur para armar y enviar el enlace.
+* **User Interaction (UI) - Required:** El atacante necesita obligatoriamente que un cliente legítimo haga clic en el enlace infectado para que el script se ejecute en su navegador local.
+* **Scope (S) - Changed:** La falla original está en el código del servidor de MercadoSur, pero el impacto ocurre en un entorno completamente distinto: el navegador del cliente final.
+* **Confidentiality & Integrity - Low:** Permite leer datos locales del navegador de la víctima, como cookies sin protección (Confidencialidad Baja), y alterar la apariencia del sitio (Integridad Baja). 
 * **Availability - None:** El ataque no afecta la estabilidad ni disponibilidad de los servidores de MercadoSur.
 
 ### 4. Políticas de Prevención (Estrategias de Código Seguro)
