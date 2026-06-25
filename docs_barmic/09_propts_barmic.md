@@ -1,0 +1,3 @@
+1. Actúa como un experto en DevSecOps. Estoy montando el entorno para una auditoría de seguridad web de un e-commerce ficticio llamado MercadoSur. El objetivo es construir una app que presente nuestros hallazgos de explotación (SQLi, XSS, OS Command Injection) sobre un entorno DVWA, utilizando React, Vite y TypeScript. Dame los comandos exactos de terminal para inicializar el proyecto, armar el repositorio y dejar listo el despliegue en Vercel. Regla del proyecto: la carpeta local, el repo de GitHub y el sitio en Vercel deben llamarse obligatoriamente auditoria_barmic. Dame el paso a paso directo de los comandos para la terminal.
+
+2. 
