@@ -25,3 +25,5 @@
 
 13. Finalizando la confeccion de mis docuemntos del proyecto, archivo 01_resumen_barmic.md para que ahora contenga todo el material que hemos confeccionado en los documentos, incluye la totalidad de informacion relevante para este documento.
 
+14. Vamos con react, necesito que te explayes en el desarollo de la aplicacion, es completamente necesario que sea algo sumamente interactivo, con menus desplegables, con colores llamativos dignos de una empresa llamada MercadoSur, necesito que los parrafos contengan informacion relevante y la matriz de riesgos con efectos de luces, recueda que usaremos tailwind, recuerda poner mi firma en la parte inferior de la app con acceso a mi github https://github.com/Michprogram 
+
