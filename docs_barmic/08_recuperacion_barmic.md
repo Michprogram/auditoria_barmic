@@ -54,3 +54,19 @@ La gestión de la crisis y la comunicación transparente son vitales para proteg
    * Despliegue de un comunicado oficial en el portal web y redes sociales.
    * Envío de correos electrónicos a los clientes afectados detallando qué datos fueron comprometidos, qué datos están a salvo (aclarando que los tokens de tarjetas de crédito no fueron expuestos si la pasarela estaba segmentada), y forzando un reseteo preventivo de contraseñas de forma automática.
    * Habilitación de una línea de soporte técnico prioritaria para resolución de dudas.
+
+#### E. Estructura Organizacional: Comité de Crisis (Roles y Responsabilidades)
+Durante la activación del DRP, la toma de decisiones no puede ser ambigua. Se establece el siguiente comité de emergencia para MercadoSur:
+* **Líder de Incidente (CISO / Gerente de TI):** Autoridad máxima técnica. Decide si se debe aislar la red, bajar el portal o activar los servidores de contingencia.
+* **Coordinador Técnico (Líder DevSecOps):** Encargado de ejecutar la contención, aplicar los parches a la vulnerabilidad explotada y coordinar la restauración desde los respaldos inmutables.
+* **Líder de Comunicaciones (Relaciones Públicas / Legal):** Único portavoz autorizado para emitir declaraciones a la prensa, redactar los correos para los clientes afectados y reportar a las entidades reguladoras.
+
+#### F. Fase 4: Análisis Post-Incidente y Lecciones Aprendidas (Mejora Continua)
+Una vez restaurada la operabilidad (RTO cumplido) y cerrada la brecha, MercadoSur ejecutará un proceso de autoevaluación obligatoria dentro de las siguientes 72 horas:
+1. **Reunión de Retrospectiva (Post-Mortem):** Análisis sin búsqueda de culpables (*blameless*) para determinar exactamente cómo fallaron los controles preventivos (ej. por qué el WAF no detectó el SQLi).
+2. **Actualización de Políticas:** Modificación de las normativas de desarrollo seguro (SSDLC) y del propio DRP basándose en las fallas detectadas durante la crisis.
+
+#### G. Plan de Pruebas y Simulacros (Drills)
+Un DRP que no se prueba es solo una hipótesis. MercadoSur someterá este plan a pruebas rigurosas:
+* **Pruebas de Escritorio (Tabletop Exercises) - Semestral:** Simulaciones teóricas donde el Comité de Crisis se reúne para resolver un escenario ficticio de inyección de comandos o ransomware, validando que todos conocen sus roles y el flujo de comunicación.
+* **Pruebas de Conmutación (Failover Testing) - Anual:** Simulacro técnico real realizado de madrugada, donde se apaga deliberadamente el servidor de base de datos principal para medir si el equipo logra levantar la réplica de contingencia dentro del tiempo RTO de 2 horas establecido.
