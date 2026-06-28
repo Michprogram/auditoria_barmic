@@ -27,3 +27,6 @@
 
 14. Vamos con react, necesito que te explayes en el desarollo de la aplicacion, es completamente necesario que sea algo sumamente interactivo, con menus desplegables, con colores llamativos dignos de una empresa llamada MercadoSur, necesito que los parrafos contengan informacion relevante y la matriz de riesgos con efectos de luces, recueda que usaremos tailwind, recuerda poner mi firma en la parte inferior de la app con acceso a mi github https://github.com/Michprogram 
 
+15. Con el código que me entregaste tuve un problema, al parecer Tailwind no esta funcionando como corresponde (inserte imagen de como se ve el proyecto levantado), por lo que mi proyecto se ve sin estilo. Es necesario que tomes en cuenta que cuando comence el proyecto instale las dependencias en los computadores de Inacap, y ahora clone mi repositorio de Github en mi Computador Personal, ayudame a corregir este error.
+
+
