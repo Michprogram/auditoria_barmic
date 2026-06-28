@@ -53,4 +53,8 @@
 
 18. Acepto completamente el cambio de estilo, no lo vuelvas a cambiar, me gusto totalmente, pero necesito que agregues mas información a cada sección, debe contener aun mas contenido, básate completamente en el contenido de los Markdown confeccionados, fíjate que cada uno de los ataques tenga su Análisis técnico, El mecanismo de Falla, Impacto en MercadoSur, Explicar y justificar la puntuación y severidad de la CVSS, políticas de prevención, controles de mitigación. Debes integrar toda la información existente en los markdown a cada sección, es necesario agregar *toda* la información confeccionada a cada sección, no quiero resúmenes, no quiero secciones cortas, quiero un proyecto completo con información relevante, bastante lectura y aplicación al caso, deja de realizar secciones con resúmenes y poca información, recuerda ser fiel al 100% con el estilo de diseño que utilizaste. tanto colores fuente y display. 
 
+19. Los prompts utilizados hasta el momento de manera oficial son los siguientes: (09_promts_barmic.md) a continuacion asignales un titulo y una etiqueta al igual que lo hiciste con los primeros dos promts que te envio en la imagen, incluye tambien este prompt a la lista siendo el numero 19.
+
+20. Antes de seguir con el desarrollo de este proyecto, es necesario revisar el Deploy en Vercel de mi proyecto, ya que por lo que veo tengo un error de produccion que evita el deploy del mismo en Vercel. En deployments de mi repositorio de Github tiene una X en rojo +30 deployments. Lo cual se ve de la siguiente manera, todo comenzo cuando incorpore mi codigo en el archivo App.tsx. 
+
 
