@@ -1247,26 +1247,44 @@ const App = () => {
                 </div>
 
                 <div className="dark:bg-zinc-900/80 bg-white p-6 rounded-lg border-l-4 border-l-fuchsia-500 shadow-sm relative">
-                  <div className="absolute top-0 right-0 bg-fuchsia-500 text-white text-[10px] font-bold px-2 py-1 rounded-bl uppercase">Vulnerabilidades</div>
-                  <h4 className="font-bold text-slate-800 dark:text-fuchsia-400 mb-3 text-lg">Prompt : </h4>
+                  <div className="absolute top-0 right-0 bg-fuchsia-500 text-white text-[10px] font-bold px-2 py-1 rounded-bl uppercase">DESARROLLO FRONTEND</div>
+                  <h4 className="font-bold text-slate-800 dark:text-fuchsia-400 mb-3 text-lg">Prompt 22: Sincronización del Resumen Ejecutivo en UI </h4>
                   <p className="italic text-slate-600 dark:text-zinc-400 text-base leading-relaxed bg-zinc-50 dark:bg-zinc-950 p-4 rounded border border-slate-100 dark:border-zinc-800">
-                    " "
+                    "Revisando la app, en el apartado de Resumen Ejecutivo veo que solo llega hasta el punto 4 de 6 establecidos en el markdown 01_resumen_barmic.md. Te entrego lo faltante para incorporarlo a la seccion " ...."  "
                   </p>
                 </div>
                 <div className="dark:bg-zinc-900/80 bg-white p-6 rounded-lg border-l-4 border-l-fuchsia-500 shadow-sm relative">
-                  <div className="absolute top-0 right-0 bg-fuchsia-500 text-white text-[10px] font-bold px-2 py-1 rounded-bl uppercase">Vulnerabilidades</div>
-                  <h4 className="font-bold text-slate-800 dark:text-fuchsia-400 mb-3 text-lg">Prompt : </h4>
+                  <div className="absolute top-0 right-0 bg-fuchsia-500 text-white text-[10px] font-bold px-2 py-1 rounded-bl uppercase">DISEÑO UI/UX</div>
+                  <h4 className="font-bold text-slate-800 dark:text-fuchsia-400 mb-3 text-lg">Prompt 23: Despliegue de Evidencias de Entrada y Reflejo XSS</h4>
                   <p className="italic text-slate-600 dark:text-zinc-400 text-base leading-relaxed bg-zinc-50 dark:bg-zinc-950 p-4 rounded border border-slate-100 dark:border-zinc-800">
-                    " "
+                    "Otro detalle importante, en la seccion 3. Cross-site Scripting, veo que solo utilizaste una imagen OUTPUT SCRIPT EXECUTED: docs_barmic/img_barmic/p-XSS_barmic.png, dentro de la carpeta docs_barmic/img_barmic, existen 2 imagenes llamadas XSS-barmic y XSS-2_barmic, las cuales es totalmente necesario que integres a la seccion, estas son las evidencias del script en el entorno de prueba DVWA  "
                   </p>
                 </div>
 
 
                 <div className="dark:bg-zinc-900/80 bg-white p-6 rounded-lg border-l-4 border-l-fuchsia-500 shadow-sm relative">
-                  <div className="absolute top-0 right-0 bg-fuchsia-500 text-white text-[10px] font-bold px-2 py-1 rounded-bl uppercase">Vulnerabilidades</div>
-                  <h4 className="font-bold text-slate-800 dark:text-fuchsia-400 mb-3 text-lg">Prompt : </h4>
+                  <div className="absolute top-0 right-0 bg-fuchsia-500 text-white text-[10px] font-bold px-2 py-1 rounded-bl uppercase">DISEÑO UI/UX</div>
+                  <h4 className="font-bold text-slate-800 dark:text-fuchsia-400 mb-3 text-lg">Prompt 24: Optimización de Código Modular </h4>
                   <p className="italic text-slate-600 dark:text-zinc-400 text-base leading-relaxed bg-zinc-50 dark:bg-zinc-950 p-4 rounded border border-slate-100 dark:border-zinc-800">
-                    " "
+                    "Pero dame exactamente la parte que vas a agregar y donde ponerla, no me envies el codigo completo. "
+                  </p>
+                </div>
+
+
+                <div className="dark:bg-zinc-900/80 bg-white p-6 rounded-lg border-l-4 border-l-fuchsia-500 shadow-sm relative">
+                  <div className="absolute top-0 right-0 bg-fuchsia-500 text-white text-[10px] font-bold px-2 py-1 rounded-bl uppercase">DISEÑO UI/UX</div>
+                  <h4 className="font-bold text-slate-800 dark:text-fuchsia-400 mb-3 text-lg">Prompt 25: Expansión del Plan DRP con Reloj de Crisis Animado </h4>
+                  <p className="italic text-slate-600 dark:text-zinc-400 text-base leading-relaxed bg-zinc-50 dark:bg-zinc-950 p-4 rounded border border-slate-100 dark:border-zinc-800">
+                    "La sección de recuperación veo que la información que contiene es bastante acotada, necesito que agregues lo determinado en el archivo 08_recuperacion_barmic.md, que integres toda la información contenida en el markdown. Me gusta el detalle de métricas objetivas con un reloj, podríamos mejorar el diseño dándole aun mas énfasis en los tiempos, como un reloj moviéndose, en la parte de protocolo de notificación de incidentes y escalamiento, pero debes integrar mas información, toda la información del documento.  "
+                  </p>
+                </div>
+
+
+                <div className="dark:bg-zinc-900/80 bg-white p-6 rounded-lg border-l-4 border-l-fuchsia-500 shadow-sm relative">
+                  <div className="absolute top-0 right-0 bg-fuchsia-500 text-white text-[10px] font-bold px-2 py-1 rounded-bl uppercase">DISEÑO UI/UX</div>
+                  <h4 className="font-bold text-slate-800 dark:text-fuchsia-400 mb-3 text-lg">Prompt 26: Navegación Secuencial y Dashboard de Control Perimetral</h4>
+                  <p className="italic text-slate-600 dark:text-zinc-400 text-base leading-relaxed bg-zinc-50 dark:bg-zinc-950 p-4 rounded border border-slate-100 dark:border-zinc-800">
+                    "Al utilizar la app noto incomodidad para pasar de modulo en modulo, solo puedo retornar al panel para ver el otro modulo, agreguemos un botón para siguiente modulo, y así hacer esto mas fluido. Además quiero agregar un dashboard en el home, para así poder ver gráficamente con algún grafico de torta o similar, la gravedad de la matriz de riesgos, o algún dato relevante sobre esta auditoria, mostrar un resumen de esta auditoria en el modulo de home, con gráficos, tipo dashboard.  "
                   </p>
                 </div>
 
@@ -1300,6 +1318,10 @@ const App = () => {
             ) : <div className="hidden sm:block w-[180px]"></div>}
           </div>
         )}
+
+
+
+
       </main>
 
 
