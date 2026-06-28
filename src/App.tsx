@@ -715,6 +715,26 @@ const App = () => {
               <p className="text-slate-700 dark:text-zinc-300 leading-relaxed text-lg mb-6 text-left">
                 Para evaluar las vulnerabilidades encontradas en el portal de MercadoSur, se emplea una metodología de evaluación de Riesgo Inherente basada en la fórmula <strong>Riesgo = Probabilidad × Impacto</strong>. Evaluado en escalas de 1 a 5, posicionando amenazas operativas comerciales.
               </p>
+              <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8 text-left">
+                <div className="bg-slate-100 dark:bg-zinc-950 p-4 rounded-lg border-l-4 border-green-500 shadow-sm">
+                  <h4 className="font-bold text-green-600 dark:text-green-500 mb-1 font-mono">🟩 BAJO (1-4)</h4>
+                  <p className="text-xs text-slate-600 dark:text-zinc-400">Riesgo aceptable con monitoreo continuo.</p>
+                </div>
+                <div className="bg-slate-100 dark:bg-zinc-950 p-4 rounded-lg border-l-4 border-yellow-400 shadow-sm">
+                  <h4 className="font-bold text-yellow-600 dark:text-yellow-500 mb-1 font-mono">🟨 MEDIO (5-9)</h4>
+                  <p className="text-xs text-slate-600 dark:text-zinc-400">Requiere mitigación a mediano plazo.</p>
+                </div>
+                <div className="bg-slate-100 dark:bg-zinc-950 p-4 rounded-lg border-l-4 border-orange-500 shadow-sm">
+                  <h4 className="font-bold text-orange-600 dark:text-orange-500 mb-1 font-mono">🟧 ALTO (10-16)</h4>
+                  <p className="text-xs text-slate-600 dark:text-zinc-400">Requiere implementación de controles inmediatos.</p>
+                </div>
+                <div className="bg-slate-100 dark:bg-zinc-950 p-4 rounded-lg border-l-4 border-red-600 shadow-sm relative overflow-hidden">
+                  <div className="absolute inset-0 bg-red-500/10 animate-pulse pointer-events-none"></div>
+                  <h4 className="font-bold text-red-600 dark:text-red-500 mb-1 font-mono relative z-10">🟥 EXTREMO (17-25)</h4>
+                  <p className="text-xs text-slate-600 dark:text-zinc-400 relative z-10">Riesgo crítico inaceptable. Detener operaciones.</p>
+                </div>
+              </div>
+
               <p className="dark:text-cyan-400 text-sm font-mono font-bold animate-pulse tracking-widest uppercase">
                 HAZ CLIC EN LAS CELDAS RESALTADAS DE LA TABLA PARA DESPLEGAR EL ANÁLISIS IPER COMPLETO.
               </p>

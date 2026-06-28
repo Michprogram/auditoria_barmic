@@ -83,4 +83,8 @@ W:\git clone\auditoria_barmic>
 
 26. Al utilizar la app noto incomodidad para pasar de modulo en modulo, solo puedo retornar al panel para ver el otro modulo, agreguemos un botón para siguiente modulo, y así hacer esto mas fluido. Además quiero agregar un dashboard en el home, para así poder ver gráficamente con algún grafico de torta o similar, la gravedad de la matriz de riesgos, o algún dato relevante sobre esta auditoria, mostrar un resumen de esta auditoria en el modulo de home, con gráficos, tipo dashboard. 
 
+27. En esta parte de la seccion de matriz IPER, veo necesario agregar un parrafo donde se explique el puntaje y los colores a nivel general para que la persona entienda los valores antes e ver los resultados de la evaluacion. 
+
+
+
 
