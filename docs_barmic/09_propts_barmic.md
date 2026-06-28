@@ -29,4 +29,24 @@
 
 15. Con el código que me entregaste tuve un problema, al parecer Tailwind no esta funcionando como corresponde (inserte imagen de como se ve el proyecto levantado), por lo que mi proyecto se ve sin estilo. Es necesario que tomes en cuenta que cuando comence el proyecto instale las dependencias en los computadores de Inacap, y ahora clone mi repositorio de Github en mi Computador Personal, ayudame a corregir este error.
 
+16. Ahora si me funciona correctamente el diseño de la pagina, pero respecto a lo que es el contenido no se ajusta directamente a lo que busco, a continuación te daré directrices para mejorar exactamente lo que necesito:
+
+- Modulariza cada uno de los docs en docs_barmic, cada uno de los archivos debe tener su propio apartado, siendo muy generoso en cuanto al contenido, ya que esto debe ser una auditoria completa para cliente.
+
+- Haz un menu en cuadros, que al mostrar el home de este proyecto tenga TODOS los modulos a tratar y que al seleccionar cada uno de estos cuadros nos dirija a la seccion correspondiente, se creativo, necesito resaltar en esta evaluación.
+
+- Utiliza estilo llamativo, ocupa neon para resaltar lo mas importante, por sobre todo el modulo de matriz de riesgos, es donde mas debes poner enfasis visual para lograr llegar al cliente y que comprenda la magnitud del riesgo.
+
+- Utiliza directamente la informacion que se confecciono en cada Markdown en la carpeta docs_barmic.
+
+- No separes tacitamente por Informe A y Informe B, este proyecto es un conjunto de 2 trabajos pero debe ser unificado para la entrega por lo que necesito que no hagas esa separacion explicita.
+
+- Debe contener un boton aparte, donde tu consideres se vea mejor para agregar la Bitacora de AI con todos los prompts que utilizamos a lo largo de este proyecto, recuerda utilizar el documento 09_propts_barmic.md para realizar este apartado.
+
+- Crea un boton para poner el modo oscuro segun comodidad de cada persona
+
+- Para el modulo de vulnerabilidades ponle en un bloque de codigo el payload que usamos para cada uno de los 3 casos, para que este se vea mas profesional. Al mismo tiempo utiliza las imagenes guardadas en docs_barmic/img_barmic para mostrar evidencia real en el proyecto.
+
+- Siempre es necesario mantener mi firma en el footer de la pagina, hazlo de una forma sumamente minimalista, como la imagen que te envie. 
+
 
