@@ -838,24 +838,24 @@ const App = () => {
                 </div>
 
                 <div className="dark:bg-zinc-900/80 bg-white p-6 rounded-lg border-l-4 border-l-fuchsia-500 shadow-sm relative">
-                  <div className="absolute top-0 right-0 bg-fuchsia-500 text-white text-[10px] font-bold px-2 py-1 rounded-bl uppercase">Mitigación Corporativa</div>
-                  <h4 className="font-bold text-slate-800 dark:text-fuchsia-400 mb-3 text-lg">Prompt 03: Matriz de Riesgos y Plan de Desastres</h4>
+                  <div className="absolute top-0 right-0 bg-fuchsia-500 text-white text-[10px] font-bold px-2 py-1 rounded-bl uppercase">Vulnerabilidades</div>
+                  <h4 className="font-bold text-slate-800 dark:text-fuchsia-400 mb-3 text-lg">Prompt 03: Informe Técnico de XSS Reflejado</h4>
                   <p className="italic text-slate-600 dark:text-zinc-400 text-base leading-relaxed bg-zinc-50 dark:bg-zinc-950 p-4 rounded border border-slate-100 dark:border-zinc-800">
                     "Siguiendo con la auditoría para MercadoSur, redacta el archivo 03_xss_barmic.md para la vulnerabilidad XSS Reflejado. El payload que inyecté en DVWA fue alert('auditoria_barmic'). Explica técnicamente cómo el servidor devuelve la entrada sin sanitizar para los clientes del e-commerce. Justifica por qué el puntaje CVSS v3.1 es de 6.1 en relación a la imagen que te envie de los parametros para el calculo."
                   </p>
                 </div>
 
                 <div className="dark:bg-zinc-900/80 bg-white p-6 rounded-lg border-l-4 border-l-fuchsia-500 shadow-sm relative">
-                  <div className="absolute top-0 right-0 bg-fuchsia-500 text-white text-[10px] font-bold px-2 py-1 rounded-bl uppercase">Vulnerabilidades</div>
-                  <h4 className="font-bold text-slate-800 dark:text-fuchsia-400 mb-3 text-lg">Prompt 04: Informe Técnico de SQLi</h4>
+                  <div className="absolute top-0 right-0 bg-fuchsia-500 text-white text-[10px] font-bold px-2 py-1 rounded-bl uppercase">ACTIVOS Y RIESGOS</div>
+                  <h4 className="font-bold text-slate-800 dark:text-fuchsia-400 mb-3 text-lg">Prompt 04: Informe Técnico de Inyección de Comandos</h4>
                   <p className="italic text-slate-600 dark:text-zinc-400 text-base leading-relaxed bg-zinc-50 dark:bg-zinc-950 p-4 rounded border border-slate-100 dark:border-zinc-800">
                     "Arma el documento 04_comandos_barmic.md para la Inyección de Comandos. El payload ejecutado en DVWA fue 127.0.0.1; cat /etc/passwd. Relaciona este hallazgo de Ejecución de Código con el colapso total de la confidencialidad, integridad y disponibilidad en el servidor de MercadoSur. Justifica el CVSS de 9.8 y entrega prevención de código seguro, como evitar el uso de la terminal y aplicar listas blancas, junto con  el principio del minimo privilegio."
                   </p>
                 </div>
 
                 <div className="dark:bg-zinc-900/80 bg-white p-6 rounded-lg border-l-4 border-l-fuchsia-500 shadow-sm relative">
-                  <div className="absolute top-0 right-0 bg-fuchsia-500 text-white text-[10px] font-bold px-2 py-1 rounded-bl uppercase">Vulnerabilidades</div>
-                  <h4 className="font-bold text-slate-800 dark:text-fuchsia-400 mb-3 text-lg">Prompt 05: Informe Técnico de SQLi</h4>
+                  <div className="absolute top-0 right-0 bg-fuchsia-500 text-white text-[10px] font-bold px-2 py-1 rounded-bl uppercase">DOCUMENTACIÓN</div>
+                  <h4 className="font-bold text-slate-800 dark:text-fuchsia-400 mb-3 text-lg">Prompt 05: Transición a Activos e Informe B</h4>
                   <p className="italic text-slate-600 dark:text-zinc-400 text-base leading-relaxed bg-zinc-50 dark:bg-zinc-950 p-4 rounded border border-slate-100 dark:border-zinc-800">
                     "ya, tengo listo los ataques y sus puntuaciones, ahora necesito seguir con la parte de activos de este informe de auditoria y tambien necesito que veas esta rubrica nuevamente obtener el maximo puntaje posible y adaptarla en caso de necesitar ajustes."
                   </p>
@@ -863,24 +863,24 @@ const App = () => {
 
 
                 <div className="dark:bg-zinc-900/80 bg-white p-6 rounded-lg border-l-4 border-l-fuchsia-500 shadow-sm relative">
-                  <div className="absolute top-0 right-0 bg-fuchsia-500 text-white text-[10px] font-bold px-2 py-1 rounded-bl uppercase">Vulnerabilidades</div>
-                  <h4 className="font-bold text-slate-800 dark:text-fuchsia-400 mb-3 text-lg">Prompt 06: Informe Técnico de SQLi</h4>
+                  <div className="absolute top-0 right-0 bg-fuchsia-500 text-white text-[10px] font-bold px-2 py-1 rounded-bl uppercase">ACTIVOS Y RIESGOS</div>
+                  <h4 className="font-bold text-slate-800 dark:text-fuchsia-400 mb-3 text-lg">Prompt 06: Resumen Ejecutivo Informe A</h4>
                   <p className="italic text-slate-600 dark:text-zinc-400 text-base leading-relaxed bg-zinc-50 dark:bg-zinc-950 p-4 rounded border border-slate-100 dark:border-zinc-800">
                     "Redacta el archivo 01_resumen_barmic.md para el Informe A de la auditoría. Debe incluir una presentación de la empresa asignada, MercadoSur, describiendo su contexto crítico como plataforma de e-commerce. Además, y para cumplir estrictamente con el indicador 3.1.1 de la rúbrica en nivel Destacado, construye una tabla unificada que consolide las tres vulnerabilidades explotadas en el entorno DVWA (Inyección SQL, XSS Reflejado e Inyección de Comandos) indicando claramente su respectivo puntaje CVSS v3.1 y nivel de severidad."
                   </p>
                 </div>
 
                 <div className="dark:bg-zinc-900/80 bg-white p-6 rounded-lg border-l-4 border-l-fuchsia-500 shadow-sm relative">
-                  <div className="absolute top-0 right-0 bg-fuchsia-500 text-white text-[10px] font-bold px-2 py-1 rounded-bl uppercase">Vulnerabilidades</div>
-                  <h4 className="font-bold text-slate-800 dark:text-fuchsia-400 mb-3 text-lg">Prompt 07: Informe Técnico de SQLi</h4>
+                  <div className="absolute top-0 right-0 bg-fuchsia-500 text-white text-[10px] font-bold px-2 py-1 rounded-bl uppercase">MATRIZ IPER</div>
+                  <h4 className="font-bold text-slate-800 dark:text-fuchsia-400 mb-3 text-lg">Prompt 07: Clasificación de Activos y DRP</h4>
                   <p className="italic text-slate-600 dark:text-zinc-400 text-base leading-relaxed bg-zinc-50 dark:bg-zinc-950 p-4 rounded border border-slate-100 dark:border-zinc-800">
                     "redacta el archivo 05_activos_barmic.md para la sección de Activos de Información y Riesgos del Informe B, aplicando el análisis a MercadoSur. Para alcanzar el nivel destacado en la rúbrica, identifica y clasifica un mínimo de 6 activos críticos de este rubro (como bases de datos de clientes, sistema de pago, servidores, etc). Luego, asocia las vulnerabilidades que encontramos en la fase anterior, como ponen en riesgo específico a cada uno de estos activos, justificando detalladamente el impacto en el e-commers. Además, desarrolla un conjuntode políticas de prevención específicas para estos riesgos que ataquen directamente. Finalmente, explayate en el diseño de mejoras tecnológicas y crea un Plan de Recuperación ante Desastres (DRP) completo, que incluya protocolos de respaldo, restauración y notificación de incidentes, adaptado estrictamente a los estándares de la industria del comercio electrónico."
                   </p>
                 </div>
 
                 <div className="dark:bg-zinc-900/80 bg-white p-6 rounded-lg border-l-4 border-l-fuchsia-500 shadow-sm relative">
-                  <div className="absolute top-0 right-0 bg-fuchsia-500 text-white text-[10px] font-bold px-2 py-1 rounded-bl uppercase">Vulnerabilidades</div>
-                  <h4 className="font-bold text-slate-800 dark:text-fuchsia-400 mb-3 text-lg">Prompt 08: Informe Técnico de SQLi</h4>
+                  <div className="absolute top-0 right-0 bg-fuchsia-500 text-white text-[10px] font-bold px-2 py-1 rounded-bl uppercase">MATRIZ IPER</div>
+                  <h4 className="font-bold text-slate-800 dark:text-fuchsia-400 mb-3 text-lg">Prompt 08: Matriz de Riesgos y Mapa de Calor</h4>
                   <p className="italic text-slate-600 dark:text-zinc-400 text-base leading-relaxed bg-zinc-50 dark:bg-zinc-950 p-4 rounded border border-slate-100 dark:border-zinc-800">
                     "redacta el archivo 06_matriz_barmic.md. El objetivo es construir una Matriz de Riesgos de Probabilidad x Impacto (escala 5x5) con un mapa de calor visual para MercadoSur. Debes evaluar y ubicar las tres vulnerabilidades descubiertas (Inyección SQL, Inyección de Comandos y XSS Reflejado). Dando una justificación técnica y de negocio profunda para la ubicación de cada vulnerabilidad en la matriz. Finalmente, establece una priorización entre el cruce de Nivel de Riesgo Inherente obtenido en la matriz con el puntaje CVSS v3.1 calculado para cada caso."
                   </p>
@@ -888,24 +888,24 @@ const App = () => {
 
 
                 <div className="dark:bg-zinc-900/80 bg-white p-6 rounded-lg border-l-4 border-l-fuchsia-500 shadow-sm relative">
-                  <div className="absolute top-0 right-0 bg-fuchsia-500 text-white text-[10px] font-bold px-2 py-1 rounded-bl uppercase">Vulnerabilidades</div>
-                  <h4 className="font-bold text-slate-800 dark:text-fuchsia-400 mb-3 text-lg">Prompt 09: Informe Técnico de SQLi</h4>
+                  <div className="absolute top-0 right-0 bg-fuchsia-500 text-white text-[10px] font-bold px-2 py-1 rounded-bl uppercase">MITIGACIÓN</div>
+                  <h4 className="font-bold text-slate-800 dark:text-fuchsia-400 mb-3 text-lg">Prompt 09: Integración de Políticas de Prevención</h4>
                   <p className="italic text-slate-600 dark:text-zinc-400 text-base leading-relaxed bg-zinc-50 dark:bg-zinc-950 p-4 rounded border border-slate-100 dark:border-zinc-800">
                     "veo que falta la siguiente información importante en el Markdown de matriz, asi que formula políticas de prevención específicas para cada uno de los riesgos priorizados en la matriz (Inyección SQL, Inyección de Comandos y XSS Reflejado). Estas políticas deben estar conectadas con la causa raíz de los hallazgos descubiertos en la auditoría y adaptadas al desarrollo de MercadoSur."
                   </p>
                 </div>
 
                 <div className="dark:bg-zinc-900/80 bg-white p-6 rounded-lg border-l-4 border-l-fuchsia-500 shadow-sm relative">
-                  <div className="absolute top-0 right-0 bg-fuchsia-500 text-white text-[10px] font-bold px-2 py-1 rounded-bl uppercase">Vulnerabilidades</div>
-                  <h4 className="font-bold text-slate-800 dark:text-fuchsia-400 mb-3 text-lg">Prompt 10: Informe Técnico de SQLi</h4>
+                  <div className="absolute top-0 right-0 bg-fuchsia-500 text-white text-[10px] font-bold px-2 py-1 rounded-bl uppercase">ACTIVOS Y RIESGOS</div>
+                  <h4 className="font-bold text-slate-800 dark:text-fuchsia-400 mb-3 text-lg">Prompt 10: Controles de Mitigación Estratégicos</h4>
                   <p className="italic text-slate-600 dark:text-zinc-400 text-base leading-relaxed bg-zinc-50 dark:bg-zinc-950 p-4 rounded border border-slate-100 dark:border-zinc-800">
                     "Ahora en relación a los controles (Propone controles de mitigación concretos y viables por vulnerabilidad, distintos de la prevención, y referencia un marco (OWASP, CIS o NIST). ), para cumplir con el nivel destacado de la rúbrica, propón controles de mitigación concretos y viables para las tres vulnerabilidades evaluadas."
                   </p>
                 </div>
 
                 <div className="dark:bg-zinc-900/80 bg-white p-6 rounded-lg border-l-4 border-l-fuchsia-500 shadow-sm relative">
-                  <div className="absolute top-0 right-0 bg-fuchsia-500 text-white text-[10px] font-bold px-2 py-1 rounded-bl uppercase">Vulnerabilidades</div>
-                  <h4 className="font-bold text-slate-800 dark:text-fuchsia-400 mb-3 text-lg">Prompt 11: Informe Técnico de SQLi</h4>
+                  <div className="absolute top-0 right-0 bg-fuchsia-500 text-white text-[10px] font-bold px-2 py-1 rounded-bl uppercase">CONTINUIDAD (DRP)</div>
+                  <h4 className="font-bold text-slate-800 dark:text-fuchsia-400 mb-3 text-lg">Prompt 11: Refinamiento de Activos y DRP</h4>
                   <p className="italic text-slate-600 dark:text-zinc-400 text-base leading-relaxed bg-zinc-50 dark:bg-zinc-950 p-4 rounded border border-slate-100 dark:border-zinc-800">
                     "05_activos_barmic.md identifica y clasifica por lo menos 6 activos de información que sean clave para el funcionamiento de un e-commerce como MercadoSur. Explica bien cómo las vulnerabilidades que encontramos en el lab (SQLi, XSS e Inyección de Comandos) ponen en riesgo a cada uno de esos activos. Además arma varias políticas de prevención por cada riesgo, atacando directamente la causa raíz del problema. Para cerrar, explayate en la parte de mejoras tecnológicas de infraestructura y arma un Plan de Recuperación ante Desastres (DRP) bien completo, detallando cómo serían los respaldos, la restauración y los avisos en caso de un incidente grave."
                   </p>
@@ -913,16 +913,16 @@ const App = () => {
 
 
                 <div className="dark:bg-zinc-900/80 bg-white p-6 rounded-lg border-l-4 border-l-fuchsia-500 shadow-sm relative">
-                  <div className="absolute top-0 right-0 bg-fuchsia-500 text-white text-[10px] font-bold px-2 py-1 rounded-bl uppercase">Vulnerabilidades</div>
-                  <h4 className="font-bold text-slate-800 dark:text-fuchsia-400 mb-3 text-lg">Prompt 12: Informe Técnico de SQLi</h4>
+                  <div className="absolute top-0 right-0 bg-fuchsia-500 text-white text-[10px] font-bold px-2 py-1 rounded-bl uppercase">DOCUMENTACIÓN</div>
+                  <h4 className="font-bold text-slate-800 dark:text-fuchsia-400 mb-3 text-lg">Prompt 12: Mejora del Plan de Recuperación ante Desastres</h4>
                   <p className="italic text-slate-600 dark:text-zinc-400 text-base leading-relaxed bg-zinc-50 dark:bg-zinc-950 p-4 rounded border border-slate-100 dark:border-zinc-800">
                     "Existe algo que puedas agregar al Plan de recuperacion de desastres para que este quede aun mas completo para mi entrega?"
                   </p>
                 </div>
 
                 <div className="dark:bg-zinc-900/80 bg-white p-6 rounded-lg border-l-4 border-l-fuchsia-500 shadow-sm relative">
-                  <div className="absolute top-0 right-0 bg-fuchsia-500 text-white text-[10px] font-bold px-2 py-1 rounded-bl uppercase">Vulnerabilidades</div>
-                  <h4 className="font-bold text-slate-800 dark:text-fuchsia-400 mb-3 text-lg">Prompt 13: Informe Técnico de SQLi</h4>
+                  <div className="absolute top-0 right-0 bg-fuchsia-500 text-white text-[10px] font-bold px-2 py-1 rounded-bl uppercase">DOCUMENTACIÓN</div>
+                  <h4 className="font-bold text-slate-800 dark:text-fuchsia-400 mb-3 text-lg">Prompt 13: Consolidación del Resumen Ejecutivo Final</h4>
                   <p className="italic text-slate-600 dark:text-zinc-400 text-base leading-relaxed bg-zinc-50 dark:bg-zinc-950 p-4 rounded border border-slate-100 dark:border-zinc-800">
                     "Finalizando la confeccion de mis docuemntos del proyecto, archivo 01_resumen_barmic.md para que ahora contenga todo el material que hemos confeccionado en los documentos, incluye la totalidad de informacion relevante para este documento."
                   </p>
@@ -930,24 +930,24 @@ const App = () => {
 
 
                 <div className="dark:bg-zinc-900/80 bg-white p-6 rounded-lg border-l-4 border-l-fuchsia-500 shadow-sm relative">
-                  <div className="absolute top-0 right-0 bg-fuchsia-500 text-white text-[10px] font-bold px-2 py-1 rounded-bl uppercase">Vulnerabilidades</div>
-                  <h4 className="font-bold text-slate-800 dark:text-fuchsia-400 mb-3 text-lg">Prompt 14: Informe Técnico de SQLi</h4>
+                  <div className="absolute top-0 right-0 bg-fuchsia-500 text-white text-[10px] font-bold px-2 py-1 rounded-bl uppercase">RESOLUCIÓN DE BUGS</div>
+                  <h4 className="font-bold text-slate-800 dark:text-fuchsia-400 mb-3 text-lg">Prompt 14: Construcción de Interfaz React y Tailwind</h4>
                   <p className="italic text-slate-600 dark:text-zinc-400 text-base leading-relaxed bg-zinc-50 dark:bg-zinc-950 p-4 rounded border border-slate-100 dark:border-zinc-800">
                     "Vamos con react, necesito que te explayes en el desarollo de la aplicacion, es completamente necesario que sea algo sumamente interactivo, con menus desplegables, con colores llamativos dignos de una empresa llamada MercadoSur, necesito que los parrafos contengan informacion relevante y la matriz de riesgos con efectos de luces, recueda que usaremos tailwind, recuerda poner mi firma en la parte inferior de la app con acceso a mi github https://github.com/Michprogram "
                   </p>
                 </div>
 
                 <div className="dark:bg-zinc-900/80 bg-white p-6 rounded-lg border-l-4 border-l-fuchsia-500 shadow-sm relative">
-                  <div className="absolute top-0 right-0 bg-fuchsia-500 text-white text-[10px] font-bold px-2 py-1 rounded-bl uppercase">Vulnerabilidades</div>
-                  <h4 className="font-bold text-slate-800 dark:text-fuchsia-400 mb-3 text-lg">Prompt 15: Informe Técnico de SQLi</h4>
+                  <div className="absolute top-0 right-0 bg-fuchsia-500 text-white text-[10px] font-bold px-2 py-1 rounded-bl uppercase">DISEÑO UI/UX</div>
+                  <h4 className="font-bold text-slate-800 dark:text-fuchsia-400 mb-3 text-lg">Prompt 15: Solución de Entorno y Estilos CSS</h4>
                   <p className="italic text-slate-600 dark:text-zinc-400 text-base leading-relaxed bg-zinc-50 dark:bg-zinc-950 p-4 rounded border border-slate-100 dark:border-zinc-800">
                     "Con el código que me entregaste tuve un problema, al parecer Tailwind no esta funcionando como corresponde (inserte imagen de como se ve el proyecto levantado), por lo que mi proyecto se ve sin estilo. Es necesario que tomes en cuenta que cuando comence el proyecto instale las dependencias en los computadores de Inacap, y ahora clone mi repositorio de Github en mi Computador Personal, ayudame a corregir este error. "
                   </p>
                 </div>
 
                 <div className="dark:bg-zinc-900/80 bg-white p-6 rounded-lg border-l-4 border-l-fuchsia-500 shadow-sm relative">
-                  <div className="absolute top-0 right-0 bg-fuchsia-500 text-white text-[10px] font-bold px-2 py-1 rounded-bl uppercase">Vulnerabilidades</div>
-                  <h4 className="font-bold text-slate-800 dark:text-fuchsia-400 mb-3 text-lg">Prompt 16: Informe Técnico de SQLi</h4>
+                  <div className="absolute top-0 right-0 bg-fuchsia-500 text-white text-[10px] font-bold px-2 py-1 rounded-bl uppercase">DESARROLLO FRONTEND</div>
+                  <h4 className="font-bold text-slate-800 dark:text-fuchsia-400 mb-3 text-lg">Prompt 16: Reestructuración Modular y Efectos Visuales</h4>
                   <p className="italic text-slate-600 dark:text-zinc-400 text-base leading-relaxed bg-zinc-50 dark:bg-zinc-950 p-4 rounded border border-slate-100 dark:border-zinc-800">
                     "Ahora si me funciona correctamente el diseño de la pagina, pero respecto a lo que es el contenido no se ajusta directamente a lo que busco, a continuación te daré directrices para mejorar exactamente lo que necesito:
 
@@ -972,16 +972,16 @@ const App = () => {
                 </div>
 
                 <div className="dark:bg-zinc-900/80 bg-white p-6 rounded-lg border-l-4 border-l-fuchsia-500 shadow-sm relative">
-                  <div className="absolute top-0 right-0 bg-fuchsia-500 text-white text-[10px] font-bold px-2 py-1 rounded-bl uppercase">Vulnerabilidades</div>
-                  <h4 className="font-bold text-slate-800 dark:text-fuchsia-400 mb-3 text-lg">Prompt 17: Informe Técnico de SQLi</h4>
+                  <div className="absolute top-0 right-0 bg-fuchsia-500 text-white text-[10px] font-bold px-2 py-1 rounded-bl uppercase">DESARROLLO FRONTEND</div>
+                  <h4 className="font-bold text-slate-800 dark:text-fuchsia-400 mb-3 text-lg">Prompt 17: Integración de Contenido e Interactividad IPER</h4>
                   <p className="italic text-slate-600 dark:text-zinc-400 text-base leading-relaxed bg-zinc-50 dark:bg-zinc-950 p-4 rounded border border-slate-100 dark:border-zinc-800">
                     "Acepto el estilo que le diste pero si te das cuenta los apartados no tiene informacion dentro de cada seccion, solo dice "La información de esta sección se extrae directamente de la carpeta docs_barmic. Contenido documentado durante la fase de auditoría.", es totalmente necesario que dentro de estas secciones crees el contenido, lo cual seria todo lo que esta dentro de los Markdown que confeccionamos, toda esa informacion debe estar reflejada dentro de las secciones. No quiero que las redirijas al documento, quiero que la informacion del documento este plasmada en cada seccion. Tambien cambia el color azul oscuro, es sumamente generico para los proyectos de este estilo, hazlo mucho mas atractivo visualmente. La seccion de matriz de riesgos tambien necesito que se mejore, mayor interactividad con la tabla, agrega despliegue de cajas de comentario para cada uno de los Ataques que se evaluaron .  "
                   </p>
                 </div>
 
                 <div className="dark:bg-zinc-900/80 bg-white p-6 rounded-lg border-l-4 border-l-fuchsia-500 shadow-sm relative">
-                  <div className="absolute top-0 right-0 bg-fuchsia-500 text-white text-[10px] font-bold px-2 py-1 rounded-bl uppercase">Vulnerabilidades</div>
-                  <h4 className="font-bold text-slate-800 dark:text-fuchsia-400 mb-3 text-lg">Prompt 18: Informe Técnico de SQLi</h4>
+                  <div className="absolute top-0 right-0 bg-fuchsia-500 text-white text-[10px] font-bold px-2 py-1 rounded-bl uppercase">DESARROLLO FRONTEND</div>
+                  <h4 className="font-bold text-slate-800 dark:text-fuchsia-400 mb-3 text-lg">Prompt 18: Expansión Exhaustiva del Contenido Markdown a UI</h4>
                   <p className="italic text-slate-600 dark:text-zinc-400 text-base leading-relaxed bg-zinc-50 dark:bg-zinc-950 p-4 rounded border border-slate-100 dark:border-zinc-800">
                     "Acepto completamente el cambio de estilo, no lo vuelvas a cambiar, me gusto totalmente, pero necesito que agregues mas información a cada sección, debe contener aun mas contenido, básate completamente en el contenido de los Markdown confeccionados, fíjate que cada uno de los ataques tenga su Análisis técnico, El mecanismo de Falla, Impacto en MercadoSur, Explicar y justificar la puntuación y severidad de la CVSS, políticas de prevención, controles de mitigación. Debes integrar toda la información existente en los markdown a cada sección, es necesario agregar *toda* la información confeccionada a cada sección, no quiero resúmenes, no quiero secciones cortas, quiero un proyecto completo con información relevante, bastante lectura y aplicación al caso, deja de realizar secciones con resúmenes y poca información, recuerda ser fiel al 100% con el estilo de diseño que utilizaste. tanto colores fuente y display.
                     "
@@ -989,8 +989,8 @@ const App = () => {
                 </div>
 
                 <div className="dark:bg-zinc-900/80 bg-white p-6 rounded-lg border-l-4 border-l-fuchsia-500 shadow-sm relative">
-                  <div className="absolute top-0 right-0 bg-fuchsia-500 text-white text-[10px] font-bold px-2 py-1 rounded-bl uppercase">Vulnerabilidades</div>
-                  <h4 className="font-bold text-slate-800 dark:text-fuchsia-400 mb-3 text-lg">Prompt 19: Informe Técnico de SQLi</h4>
+                  <div className="absolute top-0 right-0 bg-fuchsia-500 text-white text-[10px] font-bold px-2 py-1 rounded-bl uppercase">DOCUMENTACIÓN</div>
+                  <h4 className="font-bold text-slate-800 dark:text-fuchsia-400 mb-3 text-lg">Prompt 19: Estructuración Final de la Bitácora de Prompts</h4>
                   <p className="italic text-slate-600 dark:text-zinc-400 text-base leading-relaxed bg-zinc-50 dark:bg-zinc-950 p-4 rounded border border-slate-100 dark:border-zinc-800">
                     "Los prompts utilizados hasta el momento de manera oficial son los siguientes: (09_promts_barmic.md) a continuacion asignales un titulo y una etiqueta al igual que lo hiciste con los primeros dos promts que te envio en la imagen, incluye tambien este prompt a la lista siendo el numero 19."
                   </p>
@@ -998,7 +998,7 @@ const App = () => {
 
                 <div className="dark:bg-zinc-900/80 bg-white p-6 rounded-lg border-l-4 border-l-fuchsia-500 shadow-sm relative">
                   <div className="absolute top-0 right-0 bg-fuchsia-500 text-white text-[10px] font-bold px-2 py-1 rounded-bl uppercase">Vulnerabilidades</div>
-                  <h4 className="font-bold text-slate-800 dark:text-fuchsia-400 mb-3 text-lg">Prompt 15: Informe Técnico de SQLi</h4>
+                  <h4 className="font-bold text-slate-800 dark:text-fuchsia-400 mb-3 text-lg">Prompt : </h4>
                   <p className="italic text-slate-600 dark:text-zinc-400 text-base leading-relaxed bg-zinc-50 dark:bg-zinc-950 p-4 rounded border border-slate-100 dark:border-zinc-800">
                     " "
                   </p>
