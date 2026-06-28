@@ -185,20 +185,39 @@ const App = () => {
               </table>
             </div>
 
-            <div className="dark:bg-zinc-900/50 bg-white p-8 rounded-xl border border-slate-200 dark:border-zinc-800">
-              <h3 className="text-2xl font-bold mb-4 dark:text-cyan-400 border-b dark:border-zinc-700 pb-2">4. Evaluación de Riesgos y Estrategia de Defensa en Profundidad</h3>
+            <div className="dark:bg-zinc-900/50 bg-white p-8 rounded-xl border border-slate-200 dark:border-zinc-800 shadow-sm">
+              <h3 className="text-2xl font-bold mb-4 dark:text-cyan-400 border-b dark:border-zinc-700 pb-2">4. Evaluación de Riesgos y Priorización Operativa</h3>
               <p className="text-slate-700 dark:text-zinc-300 leading-relaxed mb-4">
-                Aplicando una metodología de evaluación de Riesgo Inherente (Probabilidad × Impacto), se definió la remediación de **Prioridad 1 para SQLi (Riesgo Extremo 25)**, **Prioridad 2 para Inyección de Comandos (Riesgo Extremo 20)**, y **Prioridad 3 para XSS Reflejado (Riesgo Alto 12)**. Para neutralizar estos riesgos, se diseñó un modelo de seguridad multicapa:
+                Aplicando una metodología de evaluación de Riesgo Inherente (Probabilidad × Impacto) adaptada a la industria comercial, se definió el siguiente orden de remediación:
               </p>
-              <ul className="list-disc pl-6 text-slate-700 dark:text-zinc-300 space-y-2 mb-6">
-                <li><strong>Políticas de Prevención (Código Seguro):</strong> Implementación obligatoria de Consultas Parametrizadas (Prepared Statements), codificación de salida estricta (Output Encoding) y validación por listas blancas, erradicando la invocación directa a la terminal del sistema.</li>
-                <li><strong>Controles de Mitigación (Infraestructura):</strong> Despliegue de un Web Application Firewall (WAF) perimetral, aislamiento de procesos mediante contenedores (Sandboxing), aplicación del Principio del Menor Privilegio (PoLP) en motores de bases de datos y emisión de políticas CSP.</li>
+              <ul className="list-disc pl-6 text-slate-700 dark:text-zinc-300 space-y-2 mb-2">
+                <li><strong>Prioridad 1:</strong> Inyección SQL (Riesgo Extremo - Nivel 25).</li>
+                <li><strong>Prioridad 2:</strong> Inyección de Comandos (Riesgo Extremo - Nivel 20).</li>
+                <li><strong>Prioridad 3:</strong> XSS Reflejado (Riesgo Alto - Nivel 12).</li>
               </ul>
+            </div>
 
-              <h4 className="text-xl font-bold mb-2 dark:text-emerald-400 mt-6">Continuidad de Negocio (DRP)</h4>
-              <p className="text-slate-700 dark:text-zinc-300 leading-relaxed">
-                Se estableció un Plan de Recuperación ante Desastres garantizando un RPO (Pérdida de datos tolerable) de 15 minutos y RTO (Tiempo de inactividad) máximo de 2 horas. Adopción de la regla 3-2-1 con copias inmutables (WORM) off-site y establecimiento de un Comité de Emergencia (RACI).
+            <div className="dark:bg-zinc-900/50 bg-white p-8 rounded-xl border border-slate-200 dark:border-zinc-800 shadow-sm">
+              <h3 className="text-2xl font-bold mb-4 dark:text-fuchsia-400 border-b dark:border-zinc-700 pb-2">5. Estrategia de Defensa en Profundidad</h3>
+              <p className="text-slate-700 dark:text-zinc-300 leading-relaxed mb-4">
+                Para neutralizar estos riesgos, se diseñó un modelo de seguridad de múltiples capas:
               </p>
+              <ul className="list-disc pl-6 text-slate-700 dark:text-zinc-300 space-y-4">
+                <li><strong className="text-fuchsia-600 dark:text-fuchsia-400">Políticas de Prevención (Código Seguro):</strong> Implementación obligatoria de Consultas Parametrizadas (Prepared Statements), codificación de salida estricta (Output Encoding) y validación por listas blancas, erradicando la invocación directa a la terminal del sistema.</li>
+                <li><strong className="text-fuchsia-600 dark:text-fuchsia-400">Controles de Mitigación (Infraestructura):</strong> Despliegue de un Web Application Firewall (WAF) perimetral, aislamiento de procesos mediante contenedores (Sandboxing), aplicación del Principio del Menor Privilegio (PoLP) en motores de bases de datos y emisión de políticas CSP.</li>
+              </ul>
+            </div>
+
+            <div className="dark:bg-zinc-900/50 bg-white p-8 rounded-xl border border-slate-200 dark:border-zinc-800 shadow-sm">
+              <h3 className="text-2xl font-bold mb-4 dark:text-emerald-400 border-b dark:border-zinc-700 pb-2">6. Continuidad de Negocio y Recuperación (DRP)</h3>
+              <p className="text-slate-700 dark:text-zinc-300 leading-relaxed mb-4">
+                Se estableció un Plan de Recuperación ante Desastres estructurado para garantizar la resiliencia operativa:
+              </p>
+              <ul className="list-disc pl-6 text-slate-700 dark:text-zinc-300 space-y-4">
+                <li><strong className="text-emerald-600 dark:text-emerald-400">Métricas Críticas:</strong> RPO (Pérdida de datos tolerable) de 15 minutos y RTO (Tiempo de inactividad) máximo de 2 horas.</li>
+                <li><strong className="text-emerald-600 dark:text-emerald-400">Respaldo Criptográfico:</strong> Adopción de la regla 3-2-1 con copias inmutables (WORM) <em>off-site</em> para prevenir el secuestro o destrucción de la base de datos.</li>
+                <li><strong className="text-emerald-600 dark:text-emerald-400">Gestión de Crisis:</strong> Establecimiento de un Comité de Emergencia (RACI), protocolos de escalamiento legal y comunicación a clientes, complementado con un programa continuo de simulacros técnicos y análisis post-incidente.</li>
+              </ul>
             </div>
           </div>
         )}
