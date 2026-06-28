@@ -87,6 +87,7 @@ W:\git clone\auditoria_barmic>
 
 28. Haz un login para acceder a la auditoria, en donde tenga un correo de la empresa Mercadosur de administrador y un contraseña, manteniendo el footer de mi Github, mantén el logo que hicimos de Mercadosur, y los colores también. Dame solo el código que vas a agregar o modificar para yo agregarlo manualmente a mi App.tsx 
 
+29. Ahora como ultimo, crea el README.md para este proyecto, el cual es mi Tercera y ultima Evaluación para la asignatura Fundamentos de seguridad de la información, con mi profesor Ruben Alejandro Schnettler Lucero, fecha de entrega martes 7 de junio. Agrega instrucciones para clonar el repositorio e instalación de dependencias, utiliza etiquetas de este tipo , dale contexto de Mercado sur, una empresa ficticia e-commers, los stacks tecnologicos utilizados, entre otra informacion que consideres relevante. 
 
 
 
