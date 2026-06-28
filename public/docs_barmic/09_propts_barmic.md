@@ -78,3 +78,7 @@ W:\git clone\auditoria_barmic>
 23. Otro detalle importante, en la seccion 3. Cross-site Scripting, veo que solo utilizaste una imagen OUTPUT SCRIPT EXECUTED: docs_barmic/img_barmic/p-XSS_barmic.png, dentro de la carpeta docs_barmic/img_barmic, existen 2 imagenes llamadas XSS-barmic y XSS-2_barmic, las cuales es totalmente necesario que integres a la seccion, estas son las evidencias del script en el entorno de prueba DVWA 
 
 24. Pero dame exactamente la parte que vas a agregar y donde ponerla, no me envies el codigo completo.
+
+25. La sección de recuperación veo que la información que contiene es bastante acotada, necesito que agregues lo determinado en el archivo 08_recuperacion_barmic.md, que integres toda la información contenida en el markdown. Me gusta el detalle de métricas objetivas con un reloj, podríamos mejorar el diseño dándole aun mas énfasis en los tiempos, como un reloj moviéndose, en la parte de protocolo de notificación de incidentes y escalamiento, pero debes integrar mas información, toda la información del documento. 
+
+

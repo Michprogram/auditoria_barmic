@@ -790,58 +790,174 @@ const App = () => {
           </div>
         )}
 
-        {/* === MÓDULO: DRP (EXTENDIDO) === */}
+        {/* === MÓDULO: DRP (COMPLETO Y ANIMADO) === */}
         {activeModule === 'drp' && (
-          <div className="animate-fade-in space-y-8">
-            <h2 className="text-3xl md:text-4xl font-black uppercase tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-500">Plan de Recuperación ante Desastres (DRP)</h2>
-            <div className="dark:bg-zinc-900/40 bg-white p-8 rounded-xl border border-slate-200 dark:border-zinc-800/80 shadow-lg mb-8">
-              <h3 className="text-2xl font-bold mb-4 dark:text-emerald-400 border-b dark:border-zinc-700 pb-2">Visión Estratégica de Continuidad E-commerce</h3>
+          <div className="animate-fade-in space-y-8 max-w-6xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-black uppercase tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-500 mb-6">
+              Plan de Recuperación ante Desastres (DRP)
+            </h2>
+
+            {/* 1. Visión Estratégica */}
+            <div className="dark:bg-zinc-900/40 bg-white p-8 rounded-xl border border-slate-200 dark:border-zinc-800/80 shadow-lg">
+              <h3 className="text-2xl font-bold mb-4 dark:text-emerald-400 border-b dark:border-zinc-700 pb-2">1. Visión Estratégica de Continuidad</h3>
               <p className="text-slate-700 dark:text-zinc-300 leading-relaxed text-lg">
-                En MercadoSur, un minuto de inactividad o una brecha se traduce en pérdidas operativas graves. Este DRP establece la arquitectura de resiliencia obligatoria para absorber compromisos como RCE o exfiltraciones SQLi, estipulando segmentación de redes Zero Trust y virtualización inmutable como pilar fundacional previo a la crisis.
+                En la industria del e-commerce, un minuto de inactividad o una brecha de datos se traduce en pérdidas financieras directas y un daño irreversible a la reputación. Este documento establece la arquitectura de resiliencia de <strong>MercadoSur</strong> para absorber, mitigar y recuperarse de incidentes críticos (como una explotación de RCE o un secuestro masivo de base de datos) garantizando la continuidad del negocio.
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-              <div className="dark:bg-zinc-900/50 bg-white p-8 rounded-xl border border-slate-200 dark:border-emerald-900/50 shadow-lg relative overflow-hidden">
-                <div className="absolute top-0 right-0 p-4 opacity-5 dark:opacity-10 text-9xl pointer-events-none">⏱️</div>
-                <h3 className="text-2xl font-bold mb-6 relative z-10 dark:text-white border-b border-emerald-900/50 pb-2 w-max">Métricas Objetivas</h3>
-                <div className="space-y-8 relative z-10">
-                  <div>
-                    <span className="block text-6xl font-black dark:text-zinc-100 mb-1">15 Min</span>
-                    <span className="text-emerald-600 dark:text-emerald-500 font-bold uppercase tracking-widest text-sm">RPO (Recovery Point Objective)</span>
-                    <p className="dark:text-zinc-400 text-sm mt-2">Pérdida máxima de datos tolerable. MercadoSur no puede perder transacciones de clientes recientes.</p>
-                  </div>
-                  <div>
-                    <span className="block text-6xl font-black dark:text-zinc-100 mb-1">2 Horas</span>
-                    <span className="text-emerald-600 dark:text-emerald-500 font-bold uppercase tracking-widest text-sm">RTO (Recovery Time Objective)</span>
-                    <p className="dark:text-zinc-400 text-sm mt-2">Tiempo máximo para restaurar funcionalidad de compras core operando en Hot Standby.</p>
-                  </div>
+            {/* 2. Mejoras Tecnológicas */}
+            <div className="dark:bg-zinc-900/40 bg-white p-8 rounded-xl border border-slate-200 dark:border-zinc-800/80 shadow-lg">
+              <h3 className="text-2xl font-bold mb-6 dark:text-emerald-400 border-b dark:border-zinc-700 pb-2">2. Mejoras Tecnológicas Estructurales</h3>
+              <p className="text-slate-700 dark:text-zinc-300 mb-6 text-lg">Para elevar la postura de seguridad y reducir la probabilidad de éxito de los ciberataques evaluados, se implementarán las siguientes mejoras en la arquitectura de red:</p>
+
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div className="bg-slate-50 dark:bg-zinc-900/80 p-6 rounded-lg border-t-4 border-emerald-500 shadow-sm">
+                  <h4 className="text-xl font-bold dark:text-cyan-400 mb-3">WAF Híbrido</h4>
+                  <p className="text-slate-700 dark:text-zinc-300 text-sm">Implementación de WAF en la nube con inspección profunda (DPI), Rate Limiting anti-DDoS y firmas OWASP Core Rule Set para bloquear SQLi y XSS en el perímetro antes del tráfico interno.</p>
                 </div>
-              </div>
-
-              <div className="dark:bg-zinc-900/50 bg-white p-8 rounded-xl border border-slate-200 dark:border-zinc-800 shadow-lg">
-                <h3 className="text-2xl font-bold mb-6 dark:text-white border-b dark:border-zinc-700 pb-2">Procedimiento Estructural (Las 4 Fases)</h3>
-
-                <div className="space-y-6">
-                  <div>
-                    <h4 className="text-lg font-bold dark:text-emerald-400 mb-1">Fase 1: Estrategia Backup 3-2-1</h4>
-                    <p className="text-slate-700 dark:text-zinc-300 text-base">Tres copias de datos en dos soportes. Fundamental: Copia Off-site y copia WORM (Inmutable/Offline) validada criptográficamente contra ransomware y secuestros.</p>
-                  </div>
-                  <div>
-                    <h4 className="text-lg font-bold dark:text-emerald-400 mb-1">Fase 2: Protocolo de Restauración</h4>
-                    <p className="text-slate-700 dark:text-zinc-300 text-base">Aislamiento de red (Failover) a instancia secundaria. Inyección de backups en zona limpia antes de reconducir DNS de clientes.</p>
-                  </div>
-                  <div>
-                    <h4 className="text-lg font-bold dark:text-emerald-400 mb-1">Fase 3: Comité RACI y Notificación</h4>
-                    <p className="text-slate-700 dark:text-zinc-300 text-base">Roles inmutables en crisis. <strong>CISO:</strong> Decide aislación. <strong>DevSecOps:</strong> Ejecuta parche y restore. <strong>Relaciones Públicas:</strong> Único portavoz público y regulatorio (72hrs legales).</p>
-                  </div>
-                  <div>
-                    <h4 className="text-lg font-bold dark:text-emerald-400 mb-1">Fase 4: Testing Post-Crisis</h4>
-                    <p className="text-slate-700 dark:text-zinc-300 text-base">Retrospectivas <i>blameless</i> y simulacros. Tabletop teóricos semestrales y Failover real (apagón de madrugada programado) anual.</p>
-                  </div>
+                <div className="bg-slate-50 dark:bg-zinc-900/80 p-6 rounded-lg border-t-4 border-emerald-500 shadow-sm">
+                  <h4 className="text-xl font-bold dark:text-cyan-400 mb-3">Segmentación Zero Trust</h4>
+                  <p className="text-slate-700 dark:text-zinc-300 text-sm">Abandono de red plana. Micro-segmentación en: <strong>DMZ</strong> (Balanceadores/Front), <strong>Zona Privada</strong> (APIs/Pasarela) y <strong>Zona Crítica Aislada</strong> (Base de Datos sin salida a internet).</p>
+                </div>
+                <div className="bg-slate-50 dark:bg-zinc-900/80 p-6 rounded-lg border-t-4 border-emerald-500 shadow-sm">
+                  <h4 className="text-xl font-bold dark:text-cyan-400 mb-3">Contenedores Inmutables</h4>
+                  <p className="text-slate-700 dark:text-zinc-300 text-sm">Transición a Docker/Kubernetes. Despliegue en modo "solo lectura" (Read-Only Root Filesystem) mitigando el impacto de RCE y descarga de malware.</p>
                 </div>
               </div>
             </div>
+
+            {/* 3. DRP Core - Métricas */}
+            <div className="dark:bg-zinc-900/50 bg-white p-8 rounded-xl border border-slate-200 dark:border-emerald-900/50 shadow-lg relative overflow-hidden">
+              {/* Reloj de fondo sutil gigante */}
+              <div className="absolute top-0 right-0 p-4 opacity-5 dark:opacity-10 pointer-events-none">
+                <svg className="w-64 h-64 text-emerald-500 animate-[spin_60s_linear_infinite]" fill="none" stroke="currentColor" strokeWidth="1" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6l4 2"></path></svg>
+              </div>
+              <h3 className="text-2xl font-bold mb-6 relative z-10 dark:text-white border-b border-emerald-900/50 pb-2 w-max">A. Métricas de Recuperación Objetivo</h3>
+              <div className="flex flex-col md:flex-row gap-12 relative z-10">
+                <div>
+                  <span className="block text-6xl font-black dark:text-zinc-100 mb-1 flex items-center gap-2">15 Min</span>
+                  <span className="text-emerald-600 dark:text-emerald-500 font-bold uppercase tracking-widest text-sm">RPO (Recovery Point Object)</span>
+                  <p className="dark:text-zinc-400 text-sm mt-2 max-w-xs">Pérdida de datos máxima tolerable. El sistema no puede permitirse perder transacciones de compras recientes.</p>
+                </div>
+                <div>
+                  <span className="block text-6xl font-black dark:text-zinc-100 mb-1 flex items-center gap-2">2 Horas</span>
+                  <span className="text-emerald-600 dark:text-emerald-500 font-bold uppercase tracking-widest text-sm">RTO (Recovery Time Object)</span>
+                  <p className="dark:text-zinc-400 text-sm mt-2 max-w-xs">Tiempo de inactividad máximo tolerable para restaurar la funcionalidad central de compras.</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Fases 1 y 2 */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="dark:bg-zinc-900/40 bg-white p-8 rounded-xl border border-slate-200 dark:border-zinc-800 shadow-lg">
+                <h3 className="text-xl font-bold mb-4 dark:text-emerald-400">B. Fase 1: Protocolo de Respaldo</h3>
+                <p className="text-slate-700 dark:text-zinc-300 text-sm mb-4">Estándar de oro: <strong>Regla 3-2-1-1-0</strong></p>
+                <ul className="space-y-3 text-slate-700 dark:text-zinc-300 text-sm list-disc pl-5">
+                  <li><strong>3 Copias:</strong> Datos de producción y dos backups.</li>
+                  <li><strong>2 Soportes:</strong> Almacenamiento en bloque y S3.</li>
+                  <li><strong>1 Off-site:</strong> Región geográfica distinta.</li>
+                  <li><strong>1 Inmutable:</strong> Formato WORM (Write Once, Read Many), bloqueado criptográficamente contra root/ransomware.</li>
+                  <li><strong>0 Errores:</strong> Pruebas de restauración automatizadas diarias en sandbox.</li>
+                </ul>
+              </div>
+              <div className="dark:bg-zinc-900/40 bg-white p-8 rounded-xl border border-slate-200 dark:border-zinc-800 shadow-lg">
+                <h3 className="text-xl font-bold mb-4 dark:text-emerald-400">C. Fase 2: Protocolo de Restauración</h3>
+                <ol className="space-y-3 text-slate-700 dark:text-zinc-300 text-sm list-decimal pl-5">
+                  <li><strong>Contención:</strong> Aislamiento de red del servidor comprometido para preservar evidencia forense.</li>
+                  <li><strong>Failover:</strong> Activación automática de infraestructura <em>Hot Standby</em> en zona secundaria.</li>
+                  <li><strong>Restauración:</strong> Inyección de datos desde el respaldo inmutable (cumpliendo RPO 15 min).</li>
+                  <li><strong>Validación:</strong> Scripts automatizados confirman pasarelas de pago y sesiones antes de redirigir DNS.</li>
+                </ol>
+              </div>
+            </div>
+
+            {/* TIMELINE ANIMADO: Fase 3 Notificación */}
+            <div className="dark:bg-[#09090b] bg-white p-8 rounded-xl border border-slate-200 dark:border-zinc-800 shadow-2xl">
+              <h3 className="text-2xl font-bold mb-8 dark:text-emerald-400 border-b dark:border-zinc-700 pb-2">D. Fase 3: Protocolo de Notificación y Escalamiento</h3>
+              <p className="text-slate-700 dark:text-zinc-300 mb-8 text-lg">La gestión de la crisis y la comunicación transparente son vitales para proteger la Reputación de Marca.</p>
+
+              <div className="relative border-l-4 border-emerald-500/30 ml-4 pl-8 space-y-10">
+
+                {/* Nivel 1 */}
+                <div className="relative">
+                  <div className="absolute -left-[43px] top-1 bg-[#09090b] p-1 rounded-full">
+                    <div className="w-5 h-5 bg-emerald-500 rounded-full animate-ping absolute opacity-75"></div>
+                    <div className="w-5 h-5 bg-emerald-500 rounded-full relative z-10"></div>
+                  </div>
+                  <h4 className="text-xl font-bold dark:text-white flex items-center gap-3 bg-zinc-800/50 w-max px-4 py-1 rounded-lg border border-zinc-700 shadow-md">
+                    <svg className="w-5 h-5 text-emerald-400 animate-[spin_2s_linear_infinite]" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6l4 2"></path></svg>
+                    Nivel 1 (Interno - T0 a T+30 min)
+                  </h4>
+                  <ul className="mt-4 text-slate-700 dark:text-zinc-300 space-y-2 list-disc pl-5">
+                    <li>El sistema de monitoreo (SIEM) genera la alerta.</li>
+                    <li>Activación inmediata del CSIRT de MercadoSur.</li>
+                    <li>Notificación al CISO y al Gerente General con evaluación inicial.</li>
+                  </ul>
+                </div>
+
+                {/* Nivel 2 */}
+                <div className="relative">
+                  <div className="absolute -left-[43px] top-1 bg-[#09090b] p-1 rounded-full">
+                    <div className="w-5 h-5 bg-amber-500 rounded-full animate-ping absolute opacity-75"></div>
+                    <div className="w-5 h-5 bg-amber-500 rounded-full relative z-10"></div>
+                  </div>
+                  <h4 className="text-xl font-bold dark:text-white flex items-center gap-3 bg-zinc-800/50 w-max px-4 py-1 rounded-lg border border-zinc-700 shadow-md">
+                    <svg className="w-5 h-5 text-amber-400 animate-[spin_4s_linear_infinite]" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6l4 2"></path></svg>
+                    Nivel 2 (Legal y Regulatorio - T+2 a T+24 horas)
+                  </h4>
+                  <ul className="mt-4 text-slate-700 dark:text-zinc-300 space-y-2 list-disc pl-5">
+                    <li>Si se confirma exfiltración de PII, notificar autoridades (ej. CMF / Agencia de Datos).</li>
+                    <li>Cumplimiento estricto de estándares legales vigentes.</li>
+                  </ul>
+                </div>
+
+                {/* Nivel 3 */}
+                <div className="relative">
+                  <div className="absolute -left-[43px] top-1 bg-[#09090b] p-1 rounded-full">
+                    <div className="w-5 h-5 bg-fuchsia-500 rounded-full animate-ping absolute opacity-75"></div>
+                    <div className="w-5 h-5 bg-fuchsia-500 rounded-full relative z-10"></div>
+                  </div>
+                  <h4 className="text-xl font-bold dark:text-white flex items-center gap-3 bg-zinc-800/50 w-max px-4 py-1 rounded-lg border border-zinc-700 shadow-md">
+                    <svg className="w-5 h-5 text-fuchsia-400 animate-[spin_8s_linear_infinite]" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6l4 2"></path></svg>
+                    Nivel 3 (Público y Clientes - T+24 a T+48 horas)
+                  </h4>
+                  <ul className="mt-4 text-slate-700 dark:text-zinc-300 space-y-2 list-disc pl-5">
+                    <li>Comunicado oficial en portal web y redes.</li>
+                    <li>Emails a clientes afectados detallando datos comprometidos y datos a salvo (tokens segmentados).</li>
+                    <li>Reseteo preventivo automático de contraseñas.</li>
+                    <li>Habilitación de línea prioritaria de soporte.</li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+
+            {/* Fases E, F y G finales */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="dark:bg-zinc-900/40 bg-white p-6 rounded-xl border border-slate-200 dark:border-zinc-800 shadow-lg">
+                <h3 className="text-lg font-bold mb-4 dark:text-emerald-400">E. Comité de Crisis (RACI)</h3>
+                <ul className="space-y-3 text-slate-700 dark:text-zinc-300 text-sm">
+                  <li><strong>Líder Incidente (CISO):</strong> Decide aislamiento o contingencia.</li>
+                  <li><strong>Coord. Técnico (DevSecOps):</strong> Ejecuta contención, parche y restore inmutable.</li>
+                  <li><strong>Líder Comunicaciones (Legal):</strong> Único portavoz autorizado para prensa y reguladores.</li>
+                </ul>
+              </div>
+              <div className="dark:bg-zinc-900/40 bg-white p-6 rounded-xl border border-slate-200 dark:border-zinc-800 shadow-lg">
+                <h3 className="text-lg font-bold mb-4 dark:text-emerald-400">F. Post-Incidente (72 hrs)</h3>
+                <ul className="space-y-3 text-slate-700 dark:text-zinc-300 text-sm">
+                  <li><strong>Post-Mortem:</strong> Análisis <em>blameless</em> de fallos (ej. WAF bypass).</li>
+                  <li><strong>Mejora Continua:</strong> Actualización obligatoria de políticas SSDLC y del propio DRP basado en la crisis real.</li>
+                </ul>
+              </div>
+              <div className="dark:bg-zinc-900/40 bg-white p-6 rounded-xl border border-slate-200 dark:border-zinc-800 shadow-lg">
+                <h3 className="text-lg font-bold mb-4 dark:text-emerald-400">G. Plan de Simulacros</h3>
+                <ul className="space-y-3 text-slate-700 dark:text-zinc-300 text-sm">
+                  <li><strong>Tabletop (Semestral):</strong> Ejercicios teóricos del Comité validando roles.</li>
+                  <li><strong>Failover Testing (Anual):</strong> Apagado real de BD principal en madrugada para medir cumplimiento del RTO de 2 horas.</li>
+                </ul>
+              </div>
+            </div>
+
           </div>
         )}
 
