@@ -743,10 +743,10 @@ const App = () => {
                       <div className="absolute top-0 left-0 w-2 h-full bg-red-600 shadow-[0_0_20px_rgba(220,38,38,1)]"></div>
                       <h4 className="text-3xl font-black text-red-500 mb-4 ml-2">V1: Inyección SQL (Nivel 25 - Riesgo Extremo)</h4>
                       <p className="text-zinc-300 mb-4 text-lg ml-2">
-                        <strong>Probabilidad (5 - Casi Certeza):</strong> El payload es trivial y no requiere conocimientos avanzados. Herramientas automatizadas escanean e-commerces constantemente sin interacción humana.
+                        <strong>Probabilidad (5 - Casi Certeza):</strong>El payload (`' OR '1'='1`) es trivial. Existen miles de bots en internet escaneando y explotando automáticamente formularios web vulnerables 24/7 sin requerir interacción humana.
                       </p>
                       <p className="text-zinc-300 mb-6 text-lg ml-2">
-                        <strong>Impacto (5 - Catastrófico):</strong> La extracción masiva de la base de datos destruye el núcleo del negocio de MercadoSur.
+                        <strong>Impacto (5 - Catastrófico):</strong> Un e-commerce no existe sin su base de datos. La extracción masiva de PII de clientes y datos de facturación destruye el activo principal de la empresa, desencadenando demandas, multas regulatorias y pérdida total de reputación.
                       </p>
                       <div className="bg-red-950/40 p-4 rounded-lg ml-2 border border-red-900/50">
                         <p className="text-cyan-400 font-mono text-sm">→ PRIORIDAD 1 ESTRICTA. ACCIÓN: Detención de operaciones públicas hasta implementar Consultas Parametrizadas y type-juggling prevention.</p>
@@ -758,10 +758,10 @@ const App = () => {
                       <div className="absolute top-0 left-0 w-2 h-full bg-red-500 shadow-[0_0_20px_rgba(239,68,68,1)]"></div>
                       <h4 className="text-3xl font-black text-red-500 mb-4 ml-2">V2: Inyección de Comandos (Nivel 20 - Riesgo Extremo)</h4>
                       <p className="text-zinc-300 mb-4 text-lg ml-2">
-                        <strong>Probabilidad (4 - Probable):</strong> Explotación directa usando delimitador (;) pero con puntos de entrada marginalmente más oscurecidos que formularios de login.
+                        <strong>Probabilidad (4 - Probable):</strong> Aunque la explotación es igual de sencilla que SQLi (usando el separador `;`), las funciones que interactúan directamente con el sistema operativo (como conversores de imágenes o pings de red) suelen estar en secciones menos expuestas o paneles administrativos, reduciendo marginalmente la superficie de exposición pública en comparación a un buscador general.
                       </p>
                       <p className="text-zinc-300 mb-6 text-lg ml-2">
-                        <strong>Impacto (5 - Catastrófico):</strong> Otorga RCE. Control absoluto del SO, permitiendo alterar el código transaccional de pagos o botar el servidor base.
+                        <strong>Impacto (5 - Catastrófico):</strong> El RCE (Ejecución Remota de Código) otorga el control absoluto del servidor host. El atacante puede robar la base de datos, alterar el código de la pasarela de pagos e incluso utilizar el servidor de MercadoSur para atacar a terceros.
                       </p>
                       <div className="bg-red-950/40 p-4 rounded-lg ml-2 border border-red-900/50">
                         <p className="text-cyan-400 font-mono text-sm">→ PRIORIDAD 2. ACCIÓN: Erradicación de invocaciones al shell, control por listas blancas y migrar el Host a Sandboxing (Contenedores).</p>
@@ -773,10 +773,10 @@ const App = () => {
                       <div className="absolute top-0 left-0 w-2 h-full bg-orange-500 shadow-[0_0_20px_rgba(249,115,22,1)]"></div>
                       <h4 className="text-3xl font-black text-orange-400 mb-4 ml-2">V3: XSS Reflejado (Nivel 12 - Riesgo Alto)</h4>
                       <p className="text-zinc-300 mb-4 text-lg ml-2">
-                        <strong>Probabilidad (4 - Probable):</strong> Exige un vector extra de ingeniería social para persuadir a la víctima a interactuar con el enlace manipulado (phishing).
+                        <strong>Probabilidad (4 - Probable):</strong>Para tener éxito, requiere un vector adicional de ingeniería social (lograr que el cliente legítimo haga clic en un enlace fraudulento distribuido por phishing o redes sociales). No es una explotación 100% directa al servidor.
                       </p>
                       <p className="text-zinc-300 mb-6 text-lg ml-2">
-                        <strong>Impacto (3 - Moderado):</strong> Compromete confidencialidad y sesiones individuales, afectando clientes focalizados, pero sin destruir la BD global de MercadoSur.
+                        <strong>Impacto (3 - Moderado):</strong> El ataque compromete sesiones individuales (*Session Hijacking*), no la infraestructura central. Aunque es grave para el cliente afectado (posible robo de cuenta), no destruye la base de datos global de MercadoSur ni tumba los servidores.
                       </p>
                       <div className="bg-orange-950/40 p-4 rounded-lg ml-2 border border-orange-900/50">
                         <p className="text-cyan-400 font-mono text-sm">→ PRIORIDAD 3. ACCIÓN: Implementar Codificación de Salida (Output Encoding) y forzar cabeceras CSP estrictas en el dominio.</p>
