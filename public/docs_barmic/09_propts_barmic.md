@@ -85,6 +85,10 @@ W:\git clone\auditoria_barmic>
 
 27. En esta parte de la seccion de matriz IPER, veo necesario agregar un parrafo donde se explique el puntaje y los colores a nivel general para que la persona entienda los valores antes e ver los resultados de la evaluacion. 
 
+28. Haz un login para acceder a la auditoria, en donde tenga un correo de la empresa Mercadosur de administrador y un contraseña, manteniendo el footer de mi Github, mantén el logo que hicimos de Mercadosur, y los colores también. Dame solo el código que vas a agregar o modificar para yo agregarlo manualmente a mi App.tsx 
+
+
+
 
 
 
