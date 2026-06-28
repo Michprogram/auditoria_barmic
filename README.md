@@ -1,10 +1,3 @@
-¡Llegamos al final de este gran proyecto! Esta evaluación refleja no solo tus conocimientos técnicos en ciberseguridad, sino también tu capacidad para comunicar riesgos a nivel ejecutivo utilizando herramientas de desarrollo moderno y la asistencia de IA.
-
-Aquí tienes el archivo **`README.md`** estructurado profesionalmente. Utilicé las etiquetas visuales dinámicas (badges) exactas que me pediste, agregué la información académica, el contexto corporativo de MercadoSur, los comandos de instalación y un recordatorio de las credenciales de acceso que configuramos.
-
-Copia este código y pégalo en tu archivo **`README.md`** en la raíz de tu proyecto:
-
-```markdown
 # 🛍️ MercadoSur - Portal de Auditoría DevSecOps
 
 <div align="center">
