@@ -1308,6 +1308,14 @@ const App = () => {
                   </p>
                 </div>
 
+                <div className="dark:bg-zinc-900/80 bg-white p-6 rounded-lg border-l-4 border-l-fuchsia-500 shadow-sm relative">
+                  <div className="absolute top-0 right-0 bg-fuchsia-500 text-white text-[10px] font-bold px-2 py-1 rounded-bl uppercase">DISEÑO UI/UX</div>
+                  <h4 className="font-bold text-slate-800 dark:text-fuchsia-400 mb-3 text-lg">Prompt 27: Tabla explativa de nieveles de Matriz IPER</h4>
+                  <p className="italic text-slate-600 dark:text-zinc-400 text-base leading-relaxed bg-zinc-50 dark:bg-zinc-950 p-4 rounded border border-slate-100 dark:border-zinc-800">
+                    "En esta parte de la seccion de matriz IPER, veo necesario agregar un parrafo donde se explique el puntaje y los colores a nivel general para que la persona entienda los valores antes e ver los resultados de la evaluacion. "
+                  </p>
+                </div>
+
 
               </div>
             </div>
