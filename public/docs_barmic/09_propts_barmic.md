@@ -89,6 +89,10 @@ W:\git clone\auditoria_barmic>
 
 29. Ahora como ultimo, crea el README.md para este proyecto, el cual es mi Tercera y ultima Evaluación para la asignatura Fundamentos de seguridad de la información, con mi profesor Ruben Alejandro Schnettler Lucero, fecha de entrega martes 7 de junio. Agrega instrucciones para clonar el repositorio e instalación de dependencias, utiliza etiquetas de este tipo , dale contexto de Mercado sur, una empresa ficticia e-commers, los stacks tecnologicos utilizados, entre otra informacion que consideres relevante. 
 
+**[CIERRE ACADÉMICO]**
+30.  Agradecimiento y Despedida del Proyecto
+ En este mensaje quiero expresar mi más sincero agradecimiento, Ruben Alejandro Schnettler Lucero, por toda su dedicación y los valiosos conocimientos transmitidos durante este semestre en la asignatura de Fundamentos de Seguridad de la Información en INACAP. Gracias a sus enseñanzas y exigencia fui capaz de desarrollar apps web con React que jamas me imagine, agradecida totalmente con sus charlas, motivaciones y los iconicos "NAAAAAAAA", "NO TE CREOO!". ¡Next Level! 👾
+
 
 
 

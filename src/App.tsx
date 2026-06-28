@@ -1348,6 +1348,14 @@ const App = () => {
                       </p>
                     </div>
 
+                    <div className="dark:bg-zinc-900/80 bg-white p-6 rounded-lg border-l-4 border-l-fuchsia-500 shadow-sm relative">
+                      <div className="absolute top-0 right-0 bg-fuchsia-500 text-white text-[10px] font-bold px-2 py-1 rounded-bl uppercase">GITHUB</div>
+                      <h4 className="font-bold text-slate-800 dark:text-fuchsia-400 mb-3 text-lg">Prompt 29: Creacion de Readme.md</h4>
+                      <p className="italic text-slate-600 dark:text-zinc-400 text-base leading-relaxed bg-zinc-50 dark:bg-zinc-950 p-4 rounded border border-slate-100 dark:border-zinc-800">
+                        "Ahora como ultimo, crea el README.md para este proyecto, el cual es mi Tercera y ultima Evaluación para la asignatura Fundamentos de seguridad de la información, con mi profesor Ruben Alejandro Schnettler Lucero, fecha de entrega martes 7 de junio. Agrega instrucciones para clonar el repositorio e instalación de dependencias, utiliza etiquetas de este tipo , dale contexto de Mercado sur, una empresa ficticia e-commers, los stacks tecnologicos utilizados, entre otra informacion que consideres relevante. "
+                      </p>
+                    </div>
+
                   </div>
                 </div>
               </div>
