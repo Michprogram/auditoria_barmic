@@ -997,6 +997,38 @@ const App = () => {
                 </div>
 
                 <div className="dark:bg-zinc-900/80 bg-white p-6 rounded-lg border-l-4 border-l-fuchsia-500 shadow-sm relative">
+                  <div className="absolute top-0 right-0 bg-fuchsia-500 text-white text-[10px] font-bold px-2 py-1 rounded-bl uppercase">DEPLOY</div>
+                  <h4 className="font-bold text-slate-800 dark:text-fuchsia-400 mb-3 text-lg">Prompt 20: Revisar Deploy en Vercel </h4>
+                  <p className="italic text-slate-600 dark:text-zinc-400 text-base leading-relaxed bg-zinc-50 dark:bg-zinc-950 p-4 rounded border border-slate-100 dark:border-zinc-800">
+                    "Antes de seguir con el desarrollo de este proyecto, es necesario revisar el Deploy en Vercel de mi proyecto, ya que por lo que veo tengo un error de produccion que evita el deploy del mismo en Vercel. En deployments de mi repositorio de Github tiene una X en rojo +30 deployments. Lo cual se ve de la siguiente manera, todo comenzo cuando incorpore mi codigo en el archivo App.tsx.  "
+                  </p>
+                </div>
+
+                <div className="dark:bg-zinc-900/80 bg-white p-6 rounded-lg border-l-4 border-l-fuchsia-500 shadow-sm relative">
+                  <div className="absolute top-0 right-0 bg-fuchsia-500 text-white text-[10px] font-bold px-2 py-1 rounded-bl uppercase">Deploy</div>
+                  <h4 className="font-bold text-slate-800 dark:text-fuchsia-400 mb-3 text-lg">Prompt 21: Error TS6133 </h4>
+                  <p className="italic text-slate-600 dark:text-zinc-400 text-base leading-relaxed bg-zinc-50 dark:bg-zinc-950 p-4 rounded border border-slate-100 dark:border-zinc-800">
+                    " W:\git clone\auditoria_barmic  npm run build
+
+                    auditoria_barmic@0.0.0 build
+                    tsc -b && vite build
+
+                    src/App.tsx:1:8 - error TS6133: 'React' is declared but its value is never read.
+
+                    1 import React, ( useState, useEffect ) from 'react';
+                    ~~~~~
+                    Found 1 error. "
+                  </p>
+                </div>
+
+                <div className="dark:bg-zinc-900/80 bg-white p-6 rounded-lg border-l-4 border-l-fuchsia-500 shadow-sm relative">
+                  <div className="absolute top-0 right-0 bg-fuchsia-500 text-white text-[10px] font-bold px-2 py-1 rounded-bl uppercase">Vulnerabilidades</div>
+                  <h4 className="font-bold text-slate-800 dark:text-fuchsia-400 mb-3 text-lg">Prompt : </h4>
+                  <p className="italic text-slate-600 dark:text-zinc-400 text-base leading-relaxed bg-zinc-50 dark:bg-zinc-950 p-4 rounded border border-slate-100 dark:border-zinc-800">
+                    " "
+                  </p>
+                </div>
+                <div className="dark:bg-zinc-900/80 bg-white p-6 rounded-lg border-l-4 border-l-fuchsia-500 shadow-sm relative">
                   <div className="absolute top-0 right-0 bg-fuchsia-500 text-white text-[10px] font-bold px-2 py-1 rounded-bl uppercase">Vulnerabilidades</div>
                   <h4 className="font-bold text-slate-800 dark:text-fuchsia-400 mb-3 text-lg">Prompt : </h4>
                   <p className="italic text-slate-600 dark:text-zinc-400 text-base leading-relaxed bg-zinc-50 dark:bg-zinc-950 p-4 rounded border border-slate-100 dark:border-zinc-800">
@@ -1005,8 +1037,13 @@ const App = () => {
                 </div>
 
 
-
-
+                <div className="dark:bg-zinc-900/80 bg-white p-6 rounded-lg border-l-4 border-l-fuchsia-500 shadow-sm relative">
+                  <div className="absolute top-0 right-0 bg-fuchsia-500 text-white text-[10px] font-bold px-2 py-1 rounded-bl uppercase">Vulnerabilidades</div>
+                  <h4 className="font-bold text-slate-800 dark:text-fuchsia-400 mb-3 text-lg">Prompt : </h4>
+                  <p className="italic text-slate-600 dark:text-zinc-400 text-base leading-relaxed bg-zinc-50 dark:bg-zinc-950 p-4 rounded border border-slate-100 dark:border-zinc-800">
+                    " "
+                  </p>
+                </div>
 
 
               </div>

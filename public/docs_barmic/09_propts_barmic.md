@@ -57,4 +57,20 @@
 
 20. Antes de seguir con el desarrollo de este proyecto, es necesario revisar el Deploy en Vercel de mi proyecto, ya que por lo que veo tengo un error de produccion que evita el deploy del mismo en Vercel. En deployments de mi repositorio de Github tiene una X en rojo +30 deployments. Lo cual se ve de la siguiente manera, todo comenzo cuando incorpore mi codigo en el archivo App.tsx. 
 
+21. W:\git clone\auditoria_barmic>npm run build
 
+> auditoria_barmic@0.0.0 build
+> tsc -b && vite build
+
+src/App.tsx:1:8 - error TS6133: 'React' is declared but its value is never read.
+
+1 import React, { useState, useEffect } from 'react';
+         ~~~~~
+
+
+Found 1 error.
+
+
+W:\git clone\auditoria_barmic>
+
+22. 
