@@ -87,7 +87,7 @@ const App = () => {
           <div className="animate-fade-in flex-grow flex flex-col justify-center py-4">
             <div className="text-center mb-10">
               <h2 className="text-4xl md:text-5xl font-black mb-4 dark:text-white tracking-tight uppercase">
-                Auditoría de <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-fuchsia-500">Ciberseguridad</span>
+                Auditoría de <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-yellow-400">Ciberseguridad</span>
               </h2>
               <p className="text-lg text-slate-600 dark:text-zinc-400 font-mono">
                 [ ESTADO DE RED: <span className="text-red-600 dark:text-red-500 font-bold dark:drop-shadow-[0_0_8px_rgba(239,68,68,0.8)] animate-pulse">COMPROMETIDA</span> ]
