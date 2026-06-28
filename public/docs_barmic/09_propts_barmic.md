@@ -73,4 +73,8 @@ Found 1 error.
 
 W:\git clone\auditoria_barmic>
 
-22. 
+22. Revisando la app, en el apartado de Resumen Ejecutivo veo que solo llega hasta el punto 4 de 6 establecidos en el markdown 01_resumen_barmic.md. Te entrego lo faltante para incorporarlo a la seccion " ...." 
+
+23. Otro detalle importante, en la seccion 3. Cross-site Scripting, veo que solo utilizaste una imagen OUTPUT SCRIPT EXECUTED: docs_barmic/img_barmic/p-XSS_barmic.png, dentro de la carpeta docs_barmic/img_barmic, existen 2 imagenes llamadas XSS-barmic y XSS-2_barmic, las cuales es totalmente necesario que integres a la seccion, estas son las evidencias del script en el entorno de prueba DVWA 
+
+24. Pero dame exactamente la parte que vas a agregar y donde ponerla, no me envies el codigo completo.

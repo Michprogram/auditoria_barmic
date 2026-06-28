@@ -408,10 +408,28 @@ const App = () => {
                 </div>
               </div>
 
-              {/* Imágenes Evidencia */}
-              <div className="border border-slate-200 dark:border-zinc-800 rounded-lg p-3 dark:bg-[#020202] shadow-inner max-w-2xl mx-auto">
-                <p className="text-xs font-mono mb-3 text-center text-slate-500 dark:text-zinc-500 border-b dark:border-zinc-800 pb-2">OUTPUT SCRIPT EXECUTED: docs_barmic/img_barmic/p-XSS_barmic.png</p>
-                <img src="/docs_barmic/img_barmic/p-XSS_barmic.png" alt="Evidencia Ejecución XSS" className="w-full rounded border dark:border-zinc-800" />
+              {/* Imágenes Evidencia (DISEÑO VERTICAL DE GRAN TAMAÑO) */}
+              <div className="flex flex-col gap-8 max-w-5xl mx-auto w-full mt-6">
+                <div className="border border-slate-200 dark:border-zinc-800 rounded-xl p-4 dark:bg-[#020202] shadow-lg">
+                  <p className="text-xs font-mono mb-4 text-center text-slate-500 dark:text-zinc-500 border-b dark:border-zinc-800 pb-2">
+                    [EVIDENCIA 01] INPUT SCRIPT: /img_barmic/XSS_barmic.png
+                  </p>
+                  <img src="/docs_barmic/img_barmic/XSS_barmic.png" alt="Evidencia Payload XSS" className="w-full h-auto rounded-lg border dark:border-zinc-800" />
+                </div>
+
+                <div className="border border-slate-200 dark:border-zinc-800 rounded-xl p-4 dark:bg-[#020202] shadow-lg">
+                  <p className="text-xs font-mono mb-4 text-center text-slate-500 dark:text-zinc-500 border-b dark:border-zinc-800 pb-2">
+                    [EVIDENCIA 02] REFLEJO EN SERVIDOR: /img_barmic/XSS-2_barmic.png
+                  </p>
+                  <img src="/docs_barmic/img_barmic/XSS-2_barmic.png" alt="Evidencia Reflejado XSS" className="w-full h-auto rounded-lg border dark:border-zinc-800" />
+                </div>
+
+                <div className="border border-slate-200 dark:border-zinc-800 rounded-xl p-4 dark:bg-[#020202] shadow-lg">
+                  <p className="text-xs font-mono mb-4 text-center text-slate-500 dark:text-zinc-500 border-b dark:border-zinc-800 pb-2">
+                    [EVIDENCIA 03] OUTPUT EJECUTADO EN NAVEGADOR: /img_barmic/p-XSS_barmic.png
+                  </p>
+                  <img src="/docs_barmic/img_barmic/p-XSS_barmic.png" alt="Evidencia Ejecución XSS" className="w-full h-auto rounded-lg border dark:border-zinc-800" />
+                </div>
               </div>
 
               {/* Análisis Técnico */}
