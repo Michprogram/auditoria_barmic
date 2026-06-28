@@ -81,4 +81,6 @@ W:\git clone\auditoria_barmic>
 
 25. La sección de recuperación veo que la información que contiene es bastante acotada, necesito que agregues lo determinado en el archivo 08_recuperacion_barmic.md, que integres toda la información contenida en el markdown. Me gusta el detalle de métricas objetivas con un reloj, podríamos mejorar el diseño dándole aun mas énfasis en los tiempos, como un reloj moviéndose, en la parte de protocolo de notificación de incidentes y escalamiento, pero debes integrar mas información, toda la información del documento. 
 
+26. Al utilizar la app noto incomodidad para pasar de modulo en modulo, solo puedo retornar al panel para ver el otro modulo, agreguemos un botón para siguiente modulo, y así hacer esto mas fluido. Además quiero agregar un dashboard en el home, para así poder ver gráficamente con algún grafico de torta o similar, la gravedad de la matriz de riesgos, o algún dato relevante sobre esta auditoria, mostrar un resumen de esta auditoria en el modulo de home, con gráficos, tipo dashboard. 
+
 

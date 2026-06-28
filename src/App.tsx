@@ -20,8 +20,27 @@ const App = () => {
     window.scrollTo(0, 0);
   };
 
+
+  // --- LÓGICA DE NAVEGACIÓN SECUENCIAL ---
+  const MODULE_FLOW = [
+    { id: 'resumen', title: 'Resumen Ejecutivo' },
+    { id: 'activos', title: 'Activos Críticos' },
+    { id: 'sqli', title: 'Inyección SQL' },
+    { id: 'comandos', title: 'Inyección de Comandos' },
+    { id: 'xss', title: 'XSS Reflejado' },
+    { id: 'matriz', title: 'Matriz IPER' },
+    { id: 'controles', title: 'Controles de Mitigación' },
+    { id: 'drp', title: 'Plan DRP' },
+    { id: 'bitacora', title: 'Bitácora IA' }
+  ];
+
+  const currentModuleIndex = MODULE_FLOW.findIndex(m => m.id === activeModule);
+  const prevModule = currentModuleIndex > 0 ? MODULE_FLOW[currentModuleIndex - 1] : null;
+  const nextModule = currentModuleIndex !== -1 && currentModuleIndex < MODULE_FLOW.length - 1 ? MODULE_FLOW[currentModuleIndex + 1] : null;
+
   return (
     <div className="min-h-screen flex flex-col transition-colors duration-500 bg-slate-50 dark:bg-[#050505] text-slate-900 dark:text-zinc-300 font-sans selection:bg-cyan-500/30">
+
 
       {/* HEADER / NAVBAR */}
       <header className="sticky top-0 z-50 backdrop-blur-xl bg-white/70 dark:bg-[#050505]/80 border-b border-slate-200 dark:border-zinc-800/80 shadow-sm">
@@ -63,10 +82,10 @@ const App = () => {
       {/* CONTENIDO PRINCIPAL */}
       <main className="flex-grow max-w-7xl mx-auto px-6 py-10 w-full flex flex-col relative z-10">
 
-        {/* === HOME === */}
+        {/* === HOME & DASHBOARD === */}
         {activeModule === 'home' && (
-          <div className="animate-fade-in flex-grow flex flex-col justify-center py-8">
-            <div className="text-center mb-16">
+          <div className="animate-fade-in flex-grow flex flex-col justify-center py-4">
+            <div className="text-center mb-10">
               <h2 className="text-4xl md:text-5xl font-black mb-4 dark:text-white tracking-tight uppercase">
                 Auditoría de <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-fuchsia-500">Ciberseguridad</span>
               </h2>
@@ -75,6 +94,59 @@ const App = () => {
               </p>
             </div>
 
+            {/* DASHBOARD GRAFICO */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 mt-8">
+
+              {/* Tarjeta 1: Dona de Riesgos */}
+              <div className="bg-white dark:bg-zinc-900/40 border border-slate-200 dark:border-zinc-800 rounded-2xl p-6 shadow-lg flex flex-col items-center justify-center">
+                <h3 className="font-bold text-slate-700 dark:text-zinc-300 mb-4 uppercase tracking-wider text-sm">Distribución IPER</h3>
+                <div className="relative w-32 h-32">
+                  <svg viewBox="0 0 36 36" className="w-full h-full transform -rotate-90">
+                    <circle cx="18" cy="18" r="15.915" fill="transparent" className="stroke-slate-100 dark:stroke-zinc-800" strokeWidth="4"></circle>
+                    <circle cx="18" cy="18" r="15.915" fill="transparent" className="stroke-orange-500" strokeWidth="4" strokeDasharray="33.3 100" strokeDashoffset="0"></circle>
+                    <circle cx="18" cy="18" r="15.915" fill="transparent" className="stroke-red-600" strokeWidth="4" strokeDasharray="66.7 100" strokeDashoffset="-33.3"></circle>
+                  </svg>
+                  <div className="absolute inset-0 flex flex-col items-center justify-center">
+                    <span className="text-2xl font-black dark:text-white">3</span>
+                    <span className="text-[10px] text-slate-500 font-mono">HALLAZGOS</span>
+                  </div>
+                </div>
+                <div className="mt-4 flex gap-4 text-xs font-mono">
+                  <div className="flex items-center gap-1"><div className="w-3 h-3 bg-red-600 rounded-sm"></div> <span className="dark:text-zinc-400">2 EXTREMOS</span></div>
+                  <div className="flex items-center gap-1"><div className="w-3 h-3 bg-orange-500 rounded-sm"></div> <span className="dark:text-zinc-400">1 ALTO</span></div>
+                </div>
+              </div>
+
+              {/* Tarjeta 2: Resumen CVSS */}
+              <div className="bg-white dark:bg-zinc-900/40 border border-slate-200 dark:border-zinc-800 rounded-2xl p-6 shadow-lg flex flex-col justify-between">
+                <h3 className="font-bold text-slate-700 dark:text-zinc-300 mb-2 uppercase tracking-wider text-sm">Puntaje CVSS v3.1</h3>
+                <div className="space-y-4">
+                  <div>
+                    <div className="flex justify-between text-xs font-mono mb-1 dark:text-zinc-400"><span>SQLi / Comandos</span><span className="text-red-500 font-bold">9.8 (CRÍTICA)</span></div>
+                    <div className="w-full bg-slate-200 dark:bg-zinc-800 rounded-full h-2 overflow-hidden">
+                      <div className="bg-red-600 h-2 rounded-full shadow-[0_0_10px_rgba(220,38,38,0.8)]" style={{ width: '98%' }}></div>
+                    </div>
+                  </div>
+                  <div>
+                    <div className="flex justify-between text-xs font-mono mb-1 dark:text-zinc-400"><span>XSS Reflejado</span><span className="text-orange-400 font-bold">6.1 (MEDIA)</span></div>
+                    <div className="w-full bg-slate-200 dark:bg-zinc-800 rounded-full h-2 overflow-hidden">
+                      <div className="bg-orange-500 h-2 rounded-full shadow-[0_0_10px_rgba(249,115,22,0.8)]" style={{ width: '61%' }}></div>
+                    </div>
+                  </div>
+                </div>
+                <p className="text-xs text-slate-500 mt-4 text-center">Basado en entorno de pruebas DVWA</p>
+              </div>
+
+              {/* Tarjeta 3: Impacto de Activos */}
+              <div className="bg-white dark:bg-zinc-900/40 border border-slate-200 dark:border-zinc-800 rounded-2xl p-6 shadow-lg flex flex-col items-center justify-center relative overflow-hidden">
+                <div className="absolute -right-4 -top-4 w-24 h-24 bg-cyan-500/10 rounded-full blur-2xl"></div>
+                <h3 className="font-bold text-slate-700 dark:text-zinc-300 mb-4 uppercase tracking-wider text-sm text-center">Activos Críticos Comprometidos</h3>
+                <div className="text-5xl font-black text-cyan-600 dark:text-cyan-400 drop-shadow-[0_0_10px_rgba(6,182,212,0.5)] mb-2">6 / 6</div>
+                <p className="text-sm text-slate-600 dark:text-zinc-400 text-center font-mono mt-2 bg-slate-100 dark:bg-zinc-950 px-3 py-1 rounded">100% EXPOSICIÓN</p>
+              </div>
+            </div>
+
+            {/* CUADRÍCULA DE MÓDULOS */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
               {[
                 { id: 'resumen', title: 'Resumen Ejecutivo', icon: '📑' },
@@ -108,13 +180,13 @@ const App = () => {
           </div>
         )}
 
-        {/* === BOTÓN VOLVER (Para todos los módulos excepto Home) === */}
+        {/* === BOTÓN VOLVER ARRIBA === */}
         {activeModule !== 'home' && (
           <button
             onClick={() => goTo('home')}
             className="mb-8 w-fit text-slate-500 hover:text-cyan-600 dark:text-zinc-400 dark:hover:text-cyan-400 font-mono text-sm flex items-center gap-2 transition-colors border border-transparent hover:border-current px-3 py-1 rounded"
           >
-            ← RETORNAR AL PANEL
+            ← VOLVER AL DASHBOARD
           </button>
         )}
 
@@ -1203,7 +1275,33 @@ const App = () => {
             </div>
           </div>
         )}
+
+
+
+        {/* === BOTONES DE NAVEGACIÓN INFERIOR (PAGINACIÓN SECUENCIAL) === */}
+        {activeModule !== 'home' && (
+          <div className="mt-16 pt-8 border-t border-slate-200 dark:border-zinc-800/80 flex flex-col sm:flex-row justify-between items-center gap-4">
+            {prevModule ? (
+              <button
+                onClick={() => goTo(prevModule.id)}
+                className="w-full sm:w-auto px-6 py-3 rounded-lg border border-slate-300 dark:border-zinc-700 bg-white dark:bg-zinc-900 text-slate-700 dark:text-zinc-300 hover:bg-slate-50 hover:dark:bg-zinc-800 hover:text-cyan-600 hover:dark:text-cyan-400 transition-colors flex items-center justify-center gap-2 group"
+              >
+                <span className="group-hover:-translate-x-1 transition-transform">←</span> {prevModule.title}
+              </button>
+            ) : <div className="hidden sm:block w-[180px]"></div>}
+
+            {nextModule ? (
+              <button
+                onClick={() => goTo(nextModule.id)}
+                className="w-full sm:w-auto px-6 py-3 rounded-lg border border-slate-300 dark:border-zinc-700 bg-white dark:bg-zinc-900 text-slate-700 dark:text-zinc-300 hover:bg-slate-50 hover:dark:bg-zinc-800 hover:text-cyan-600 hover:dark:text-cyan-400 transition-colors flex items-center justify-center gap-2 group"
+              >
+                {nextModule.title} <span className="group-hover:translate-x-1 transition-transform">→</span>
+              </button>
+            ) : <div className="hidden sm:block w-[180px]"></div>}
+          </div>
+        )}
       </main>
+
 
       {/* === FOOTER MINIMALISTA === */}
       <footer className="mt-auto py-6 bg-white dark:bg-[#030303] border-t border-slate-200 dark:border-zinc-900/80 relative z-10">
@@ -1227,7 +1325,7 @@ const App = () => {
           </a>
         </div>
       </footer>
-    </div>
+    </div >
   );
 };
 
